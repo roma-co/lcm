@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Support de cours pour le livre Schwätzt Dir Lëtzebuergesch? A1.">
+  <meta name="author" content="R. Cothenet">
+  <title>Luxembourgish course material</title>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/lcm/assets/img/favicon-180x180.png">
+  <link rel="icon" type="image/png" href="/lcm/assets/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" href="/lcm/assets/img/favicon-192x192.png">
+
+  <!-- Bootsrap CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/lcm/assets/css/main.css">
+</head>
+
+<body>
+	<script>/* add darkmode on load if already set */
+	if (localStorage.getItem('theme') === 'dark') document.body.className = 'darkmode';
+	</script>
+	<header>
+	<!-- navbar -->
+	<nav class="navbar navbar-expand-md navbar-dark fixed-top shadow" role="navigation">
+  <div class="container">
+    <a class="navbar-brand" href="/lcm/"><i class="bi bi-house-fill"></i></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="toggler-icon top-bar"></span>
+      <span class="toggler-icon middle-bar"></span>
+      <span class="toggler-icon bottom-bar"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav me-md-auto mb-2 mb-md-0">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="/lcm/">Accueil</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Chapitres
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark bg-c4" style="border:none;">
+    			
+    				<li class="nav-item">
+    					<a class="dropdown-item" href="/lcm/chapitre/kapitel-1">
+    						<span class="d-inline-block rounded-circle p-1" style="background-color: #ffcc00"></span> Kapitel 1
+    					</a></li>
+    				<li class="nav-item">
+    					<a class="dropdown-item" href="/lcm/chapitre/kapitel-2">
+    						<span class="d-inline-block rounded-circle p-1" style="background-color: #ff9900"></span> Kapitel 2
+    					</a></li>
+    				<li class="nav-item">
+    					<a class="dropdown-item" href="/lcm/chapitre/kapitel-3">
+    						<span class="d-inline-block rounded-circle p-1" style="background-color: #cc0000"></span> Kapitel 3
+    					</a></li>
+    				<li class="nav-item">
+    					<a class="dropdown-item" href="/lcm/chapitre/kapitel-4">
+    						<span class="d-inline-block rounded-circle p-1" style="background-color: #990066"></span> Kapitel 4
+    					</a></li>
+    				<li class="nav-item">
+    					<a class="dropdown-item" href="/lcm/chapitre/kapitel-5">
+    						<span class="d-inline-block rounded-circle p-1" style="background-color: #3300cc"></span> Kapitel 5
+    					</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/lcm/conjugaison">Conjugaison</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/lcm/vocabulaire">Vocabulaire</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+            <button id="dark-mode-toggle" type="button" class="btn" aria-label="toggle dark mode"><i class="bi bi-circle-half"></i></button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+	<!-- end navbar -->
+	</header>
+	<main>
+	<!-- content -->
+	<div class="bg-c2 text-main mb-2">
+    <div class="container pt-4 pb-3 pt-sm-5 pb-sm-4">
+        <h2 class="d-inline-block fw-semibold pb-2" style="border-bottom:0.25rem solid #ff9900">Kapitel 2</h2><a href="https://sdl.inll.lu/?page_id=890" target="_blank" class="btn link-chapter"><i class="bi bi-book"></i></a>
+    </div>
+</div>
+<div class="container">
+    <section class="my-4">
+        
+        <div class="row gx-4 gy-2 mt-2 mb-1" data-masonry='{"percentPosition": true }'>
+            
+<div class="col-md-10 col-lg-6">
+	<div class="card px-3 py-2 bg-c2">
+		<p class="fw-semibold m-0">Wat fir en Dag ass haut?</p>
+		<p class="m-0 ps-2"><i class="bi bi-arrow-return-right text-c3 fs-5"></i> Haut ass Donneschdeg, den aachten Dezember 2022.</p>
+	</div>
+</div>
+<div class="col-md-10 col-lg-6">
+	<div class="card px-3 py-2 bg-c2">
+		<p class="fw-semibold m-0">Wéini hutt Dir Gebuertsdag?<br>Wéini hues du Gebuertsdag?</p>
+		<p class="m-0 ps-2"><i class="bi bi-arrow-return-right text-c3 fs-5"></i> Ech hunn den éischten Dezember Gebuerstag.</p>
+	</div>
+</div>
+<div class="col-md-10 col-lg-6">
+	<div class="card px-3 py-2 bg-c2">
+		<p class="fw-semibold m-0">Wéini sidd Dir gebuer?<br>Wéini bass du gebuer?</p>
+		<p class="m-0 ps-2"><i class="bi bi-arrow-return-right text-c3 fs-5"></i> Ech sinn den zweeanzwanzegsten Mee 1999 gebuer.</p>
+	</div>
+</div>
+<div class="col-md-10 col-lg-6">
+	<div class="card px-3 py-2 bg-c2">
+		<p class="fw-semibold m-0">Wou wunnt Dir?<br>Wou wunns du?</p>
+		<p class="m-0 ps-2"><i class="bi bi-arrow-return-right text-c3 fs-5"></i> Ech wunnen zu Lëtzebuerg zu Zéisseng.</p>
+	</div>
+</div>
+<div class="col-md-10 col-lg-6">
+	<div class="card px-3 py-2 bg-c2">
+		<p class="fw-semibold m-0">Wéi ass Är Telefonsnummer?<br>Wéi ass deng Handysnummer?</p>
+		<p class="m-0 ps-2"><i class="bi bi-arrow-return-right text-c3 fs-5"></i> Meng Handysnummer ass XXX XX XX XX XX.</p>
+	</div>
+</div>
+<div class="col-md-10 col-lg-6">
+	<div class="card px-3 py-2 bg-c2">
+		<p class="fw-semibold m-0">Wéi ass Är E-Mail-Adress?<br>Wéi ass deng E-Mail-Adress?</p>
+		<p class="m-0 ps-2"><i class="bi bi-arrow-return-right text-c3 fs-5"></i> Meng E-Mail-Adress ass myemail@noreply.com.</p>
+	</div>
+</div>
+<div class="col-md-10 col-lg-6">
+	<div class="card px-3 py-2 bg-c2">
+		<p class="fw-semibold m-0">Sidd dir bestuet?</p>
+		<p class="m-0 ps-2"><i class="bi bi-arrow-return-right text-c3 fs-5"></i> Nee, ech sinn nach net bestuet, ech sinn Jonggesell.</p>
+	</div>
+</div>
+        </div>
+        <div class="row g-4 mt-2 mb-1" data-masonry='{"percentPosition": true }'>
+	<div class="col-md-6">
+	<div class="card bg-c2 text-main">
+	  <h5 class="card-header">D'Joreszäiten</h5>
+	  	<ul class="list-group list-group-flush">
+			 
+		  	<li class="list-group-item bg-transparent text-main">
+		  		<div class="row align-items-start">
+			    	<div class="col-5 col-lg-4">d'Fréijoer</div><div class="col">le printemps</div>
+			  	</div>
+			</li> 
+		  	<li class="list-group-item bg-transparent text-main">
+		  		<div class="row align-items-start">
+			    	<div class="col-5 col-lg-4">de Summer</div><div class="col">l'été</div>
+			  	</div>
+			</li> 
+		  	<li class="list-group-item bg-transparent text-main">
+		  		<div class="row align-items-start">
+			    	<div class="col-5 col-lg-4">den Hierscht</div><div class="col">l'automne</div>
+			  	</div>
+			</li> 
+		  	<li class="list-group-item bg-transparent text-main">
+		  		<div class="row align-items-start">
+			    	<div class="col-5 col-lg-4">de Wanter</div><div class="col">l'hiver</div>
+			  	</div>
+			</li>
+		</ul>
+	</div>
+</div>
+	<div class="col-md-6">
+	<div class="card bg-c2 text-main">
+	  <h5 class="card-header">D'Méint</h5>
+	  	<ul class="list-group list-group-flush">
+			
+		  	<li class="list-group-item bg-transparent text-main">
+		  		<div class="row align-items-start">
+			    	<div class="col-5 col-sm-4">Januar</div><div class="col">janvier</div>
+			  	</div>
+			</li>
+		  	<li class="list-group-item bg-transparent text-main">
+		  		<div class="row align-items-start">
+			    	<div class="col-5 col-sm-4">Februar</div><div class="col">février</div>
+			  	</div>
+			</li>
+		  	<li class="list-group-item bg-transparent text-main">
+		  		<div class="row align-items-start">
+			    	<div class="col-5 col-sm-4">Mäerz</div><div class="col">mars</div>
+			  	</div>
+			</li>
+		  	<li class="list-group-item bg-transparent text-main">
+		  		<div class="row align-items-start">
+			    	<div class="col-5 col-sm-4">Abrëll</div><div class="col">avril</div>
+			  	</div>
+			</li>
+		  	<li class="list-group-item bg-transparent text-main">
+		  		<div class="row align-items-start">
+			    	<div class="col-5 col-sm-4">Mee</div><div class="col">mai</div>
+			  	</div>
+			</li>
+		  	<li class="list-group-item bg-transparent text-main">
+		  		<div class="row align-items-start">
+			    	<div class="col-5 col-sm-4">Juni</div><div class="col">juin</div>
+			  	</div>
+			</li>
+		  	<li class="list-group-item bg-transparent text-main">
+		  		<div class="row align-items-start">
+			    	<div class="col-5 col-sm-4">Juli</div><div class="col">juillet</div>
+			  	</div>
+			</li>
+		  	<li class="list-group-item bg-transparent text-main">
+		  		<div class="row align-items-start">
+			    	<div class="col-5 col-sm-4">August</div><div class="col">août</div>
+			  	</div>
+			</li>
+		  	<li class="list-group-item bg-transparent text-main">
+		  		<div class="row align-items-start">
+			    	<div class="col-5 col-sm-4">September</div><div class="col">septembre</div>
+			  	</div>
+			</li>
+		  	<li class="list-group-item bg-transparent text-main">
+		  		<div class="row align-items-start">
+			    	<div class="col-5 col-sm-4">Oktober</div><div class="col">octobre</div>
+			  	</div>
+			</li>
+		  	<li class="list-group-item bg-transparent text-main">
+		  		<div class="row align-items-start">
+			    	<div class="col-5 col-sm-4">November</div><div class="col">novembre</div>
+			  	</div>
+			</li>
+		  	<li class="list-group-item bg-transparent text-main">
+		  		<div class="row align-items-start">
+			    	<div class="col-5 col-sm-4">Dezember</div><div class="col">décembre</div>
+			  	</div>
+			</li>
+		</ul>
+	</div>
+</div>
+	<div class="col-md-6">
+	<div class="card bg-c2 text-main">
+		<h5 class="card-header">Den Datum <i class="bi bi-exclamation-triangle text-danger fs-4"></i></h5>
+	  	<ul class="list-group list-group-flush">
+	  	 
+		  	<li class="list-group-item bg-transparent text-main py-1">
+		  		<div class="row align-items-start">
+			    	<div class="col-2">1.</div><div class="col">den <strong>éischten</strong></div>
+			  	</div>
+			</li>
+		 
+		  	<li class="list-group-item bg-transparent text-main py-1">
+		  		<div class="row align-items-start">
+			    	<div class="col-2">2.</div><div class="col">den zwee<strong>ten</strong></div>
+			  	</div>
+			</li>
+		 
+		  	<li class="list-group-item bg-transparent text-main py-1">
+		  		<div class="row align-items-start">
+			    	<div class="col-2">3.</div><div class="col">den <strong>drëtten</strong></div>
+			  	</div>
+			</li>
+		 
+		  	<li class="list-group-item bg-transparent text-main py-1">
+		  		<div class="row align-items-start">
+			    	<div class="col-2">4.</div><div class="col">de véier<strong>ten</strong></div>
+			  	</div>
+			</li>
+		 
+		  	<li class="list-group-item bg-transparent text-main py-1">
+		  		<div class="row align-items-start">
+			    	<div class="col-2">...</div><div class="col"></div>
+			  	</div>
+			</li>
+		 
+		  	<li class="list-group-item bg-transparent text-main py-1">
+		  		<div class="row align-items-start">
+			    	<div class="col-2">11.</div><div class="col">den eelef<strong>ten</strong></div>
+			  	</div>
+			</li>
+		 
+		  	<li class="list-group-item bg-transparent text-main py-1">
+		  		<div class="row align-items-start">
+			    	<div class="col-2">12.</div><div class="col">den zwielef<strong>ten</strong></div>
+			  	</div>
+			</li>
+		 
+		  	<li class="list-group-item bg-transparent text-main py-1">
+		  		<div class="row align-items-start">
+			    	<div class="col-2">13.</div><div class="col">den dräizéng<strong>ten</strong></div>
+			  	</div>
+			</li>
+		 
+		  	<li class="list-group-item bg-transparent text-main py-1">
+		  		<div class="row align-items-start">
+			    	<div class="col-2">14.</div><div class="col">de véierzéng<strong>ten</strong></div>
+			  	</div>
+			</li>
+		 
+		  	<li class="list-group-item bg-transparent text-main py-1">
+		  		<div class="row align-items-start">
+			    	<div class="col-2">15.</div><div class="col">de fofzéng<strong>ten</strong></div>
+			  	</div>
+			</li>
+		 
+		  	<li class="list-group-item bg-transparent text-main py-1">
+		  		<div class="row align-items-start">
+			    	<div class="col-2">...</div><div class="col"></div>
+			  	</div>
+			</li>
+		 
+		  	<li class="list-group-item bg-transparent text-main py-1">
+		  		<div class="row align-items-start">
+			    	<div class="col-2">20.</div><div class="col">den zwanzeg<strong>sten</strong></div>
+			  	</div>
+			</li>
+		 
+		  	<li class="list-group-item bg-transparent text-main py-1">
+		  		<div class="row align-items-start">
+			    	<div class="col-2">21.</div><div class="col">den eenanzwanzeg<strong>sten</strong></div>
+			  	</div>
+			</li>
+		 
+		  	<li class="list-group-item bg-transparent text-main py-1">
+		  		<div class="row align-items-start">
+			    	<div class="col-2">...</div><div class="col"></div>
+			  	</div>
+			</li>
+		
+		</ul>
+	</div>
+</div>
+	<div class="col-md-6">
+	<div class="card bg-c2 text-main">
+	  <h5 class="card-header">D'Wochendeeg</h5>
+	  	<ul class="list-group list-group-flush">
+			
+		  	<li class="list-group-item bg-transparent text-main">
+		  		<div class="row align-items-start">
+			    	<div class="col-5 col-lg-4">Méindeg</div><div class="col">lundi</div>
+			  	</div>
+			</li>
+		  	<li class="list-group-item bg-transparent text-main">
+		  		<div class="row align-items-start">
+			    	<div class="col-5 col-lg-4">Dënschdeg</div><div class="col">mardi</div>
+			  	</div>
+			</li>
+		  	<li class="list-group-item bg-transparent text-main">
+		  		<div class="row align-items-start">
+			    	<div class="col-5 col-lg-4">Mëttwoch</div><div class="col">mercredi</div>
+			  	</div>
+			</li>
+		  	<li class="list-group-item bg-transparent text-main">
+		  		<div class="row align-items-start">
+			    	<div class="col-5 col-lg-4">Donneschdeg</div><div class="col">jeudi</div>
+			  	</div>
+			</li>
+		  	<li class="list-group-item bg-transparent text-main">
+		  		<div class="row align-items-start">
+			    	<div class="col-5 col-lg-4">Freideg</div><div class="col">vendredi</div>
+			  	</div>
+			</li>
+		  	<li class="list-group-item bg-transparent text-main">
+		  		<div class="row align-items-start">
+			    	<div class="col-5 col-lg-4">Samschdeg</div><div class="col">samedi</div>
+			  	</div>
+			</li>
+		  	<li class="list-group-item bg-transparent text-main">
+		  		<div class="row align-items-start">
+			    	<div class="col-5 col-lg-4">Sonndeg</div><div class="col">dimanche</div>
+			  	</div>
+			</li>
+		</ul>
+	</div>
+</div>
+</div>
+    </section>
+
+    
+    
+    
+    <!-- exercice section -->
+    <section>
+        <h3 class="section-title">Exercice</h3>
+        
+        <div class="my-4">
+            <h4 class="exe-title">D'Joreszäiten</h4>
+<p class="mb-3" style="font-size: 110%;"><i class="bi bi-info-circle text-m"></i> Cliquez sur les images pour dévoiler la réponse.</p>
+<div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-3">
+	
+	<div class="col">
+		<a class="btn btn-exe p-0 rounded-4 border-0" role="button" data-bs-toggle="button">
+			<div class="card text-bg-dark">
+				<img src="/lcm/assets/img/exercices/spring.jpg" class="card-img" alt="freijoer">
+				<div class="card-img-overlay px-1 d-flex align-items-center justify-content-center">
+					<p class="card-text fs-5">d'Fréijoer</p>
+				</div>
+			</div>
+		</a>
+	</div>
+	
+	<div class="col">
+		<a class="btn btn-exe p-0 rounded-4 border-0" role="button" data-bs-toggle="button">
+			<div class="card text-bg-dark">
+				<img src="/lcm/assets/img/exercices/summer.jpg" class="card-img" alt="summer">
+				<div class="card-img-overlay px-1 d-flex align-items-center justify-content-center">
+					<p class="card-text fs-5">de Summer</p>
+				</div>
+			</div>
+		</a>
+	</div>
+	
+	<div class="col">
+		<a class="btn btn-exe p-0 rounded-4 border-0" role="button" data-bs-toggle="button">
+			<div class="card text-bg-dark">
+				<img src="/lcm/assets/img/exercices/fall.jpg" class="card-img" alt="hierscht">
+				<div class="card-img-overlay px-1 d-flex align-items-center justify-content-center">
+					<p class="card-text fs-5">den Hierscht</p>
+				</div>
+			</div>
+		</a>
+	</div>
+	
+	<div class="col">
+		<a class="btn btn-exe p-0 rounded-4 border-0" role="button" data-bs-toggle="button">
+			<div class="card text-bg-dark">
+				<img src="/lcm/assets/img/exercices/winter.jpg" class="card-img" alt="wanter">
+				<div class="card-img-overlay px-1 d-flex align-items-center justify-content-center">
+					<p class="card-text fs-5">de Wanter</p>
+				</div>
+			</div>
+		</a>
+	</div>
+	
+</div>
+        </div>
+        
+    </section>
+    <!-- end exercice section -->
+    
+    <!-- conjugaison section -->
+    <section>
+        <h3 class="section-title">Conjugaison</h3>
+        
+
+<div class="row g-3">
+	
+	<div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+		<div class="card bg-c2">
+			<h5 class="card-header">hunn <span class="fw-normal">(avoir)</span></h5>
+			<div class="py-2 px-3">
+				
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">ech</div>
+					<div class="col fw-semibold">hunn</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">du</div>
+					<div class="col fw-semibold">hues</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">hien/hatt/si</div>
+					<div class="col fw-semibold">huet</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">mir</div>
+					<div class="col fw-semibold">hunn</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">dir/Dir</div>
+					<div class="col fw-semibold">hutt</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">si</div>
+					<div class="col fw-semibold">hunn</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+		<div class="card bg-c2">
+			<h5 class="card-header">wunnen <span class="fw-normal">(habiter)</span></h5>
+			<div class="py-2 px-3">
+				
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">ech</div>
+					<div class="col fw-semibold">wunnen</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">du</div>
+					<div class="col fw-semibold">wunns</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">hien/hatt/si</div>
+					<div class="col fw-semibold">wunnt</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">mir</div>
+					<div class="col fw-semibold">wunnen</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">dir/Dir</div>
+					<div class="col fw-semibold">wunnt</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">si</div>
+					<div class="col fw-semibold">wunnen</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+		<div class="card bg-c2">
+			<h5 class="card-header">brauchen <span class="fw-normal">(avoir besoin de)</span></h5>
+			<div class="py-2 px-3">
+				
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">ech</div>
+					<div class="col fw-semibold">brauch</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">du</div>
+					<div class="col fw-semibold">brauchs</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">hien/hatt/si</div>
+					<div class="col fw-semibold">brauch</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">mir</div>
+					<div class="col fw-semibold">brauchen</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">dir/Dir</div>
+					<div class="col fw-semibold">braucht</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">si</div>
+					<div class="col fw-semibold">brauchen</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+		<div class="card bg-c2">
+			<h5 class="card-header">umellen <span class="fw-normal">(enregistrer, inscrire)</span></h5>
+			<div class="py-2 px-3">
+				
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">ech</div>
+					<div class="col fw-semibold">mellen un</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">du</div>
+					<div class="col fw-semibold">mells un</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">hien/hatt/si</div>
+					<div class="col fw-semibold">mellt un</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">mir</div>
+					<div class="col fw-semibold">mellen un</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">dir/Dir</div>
+					<div class="col fw-semibold">mellt un</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">si</div>
+					<div class="col fw-semibold">mellen un</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+    </section>
+    <!-- end conjugaison section -->
+    <!-- vocabulaire section -->
+    <section>
+        <h3 class="section-title">Vocabulaire</h3>
+        <div class="accordion col-md-8 col-lg-6" id="accordionVocList">
+	
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-virgescheter">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-virgescheter" aria-expanded="false" aria-controls="collapse-virgescheter">
+	      virgëscheter&nbsp;
+	      <small class="text-secondary">
+	        (adverbe)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-virgescheter" class="accordion-collapse collapse" aria-labelledby="heading-virgescheter" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      avant-hier  <a href="https://lod.lu/artikel/VIRGESCHTER1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-geschter">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-geschter" aria-expanded="false" aria-controls="collapse-geschter">
+	      gëschter&nbsp;
+	      <small class="text-secondary">
+	        (adverbe)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-geschter" class="accordion-collapse collapse" aria-labelledby="heading-geschter" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      hier  <a href="https://lod.lu/artikel/GESCHTER1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-haut">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-haut" aria-expanded="false" aria-controls="collapse-haut">
+	      haut&nbsp;
+	      <small class="text-secondary">
+	        (adverbe)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-haut" class="accordion-collapse collapse" aria-labelledby="heading-haut" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      aujourd'hui  <a href="https://lod.lu/artikel/HAUT1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-muer">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-muer" aria-expanded="false" aria-controls="collapse-muer">
+	      muer&nbsp;
+	      <small class="text-secondary">
+	        (adverbe)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-muer" class="accordion-collapse collapse" aria-labelledby="heading-muer" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      demain  <a href="https://lod.lu/artikel/MUER1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-iwwermuer">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-iwwermuer" aria-expanded="false" aria-controls="collapse-iwwermuer">
+	      iwwermuer&nbsp;
+	      <small class="text-secondary">
+	        (adverbe)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-iwwermuer" class="accordion-collapse collapse" aria-labelledby="heading-iwwermuer" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      après-demain  <a href="https://lod.lu/artikel/IWWERMUER1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-meindeg">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-meindeg" aria-expanded="false" aria-controls="collapse-meindeg">
+	      Méindeg&nbsp;
+	      <small class="text-secondary">
+	        (substantif <i class="bi bi-gender-male text-m"></i>)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-meindeg" class="accordion-collapse collapse" aria-labelledby="heading-meindeg" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      lundi  <a href="https://lod.lu/artikel/MEINDEG1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-denschdeg">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-denschdeg" aria-expanded="false" aria-controls="collapse-denschdeg">
+	      Dënschdeg&nbsp;
+	      <small class="text-secondary">
+	        (substantif <i class="bi bi-gender-male text-m"></i>)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-denschdeg" class="accordion-collapse collapse" aria-labelledby="heading-denschdeg" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      mardi  <a href="https://lod.lu/artikel/DENSCHDEG1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-mettwoch">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-mettwoch" aria-expanded="false" aria-controls="collapse-mettwoch">
+	      Mëttwoch&nbsp;
+	      <small class="text-secondary">
+	        (substantif <i class="bi bi-gender-male text-m"></i>)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-mettwoch" class="accordion-collapse collapse" aria-labelledby="heading-mettwoch" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      mercredi  <a href="https://lod.lu/artikel/METTWOCH1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-donneschdeg">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-donneschdeg" aria-expanded="false" aria-controls="collapse-donneschdeg">
+	      Donneschdeg&nbsp;
+	      <small class="text-secondary">
+	        (substantif <i class="bi bi-gender-male text-m"></i>)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-donneschdeg" class="accordion-collapse collapse" aria-labelledby="heading-donneschdeg" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      jeudi  <a href="https://lod.lu/artikel/DONNESCHDEG1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-freideg">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-freideg" aria-expanded="false" aria-controls="collapse-freideg">
+	      Freideg&nbsp;
+	      <small class="text-secondary">
+	        (substantif <i class="bi bi-gender-male text-m"></i>)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-freideg" class="accordion-collapse collapse" aria-labelledby="heading-freideg" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      vendredi  <a href="https://lod.lu/artikel/FREIDEG1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-samschdeg">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-samschdeg" aria-expanded="false" aria-controls="collapse-samschdeg">
+	      Samschdeg&nbsp;
+	      <small class="text-secondary">
+	        (substantif <i class="bi bi-gender-male text-m"></i>)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-samschdeg" class="accordion-collapse collapse" aria-labelledby="heading-samschdeg" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      samedi  <a href="https://lod.lu/artikel/SAMSCHDEG1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-sonndeg">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-sonndeg" aria-expanded="false" aria-controls="collapse-sonndeg">
+	      Sonndeg&nbsp;
+	      <small class="text-secondary">
+	        (substantif <i class="bi bi-gender-male text-m"></i>)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-sonndeg" class="accordion-collapse collapse" aria-labelledby="heading-sonndeg" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      dimanche  <a href="https://lod.lu/artikel/SONNDEG1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-gebuertsdag">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-gebuertsdag" aria-expanded="false" aria-controls="collapse-gebuertsdag">
+	      Gebuertsdag&nbsp;
+	      <small class="text-secondary">
+	        (substantif <i class="bi bi-gender-male text-m"></i>)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-gebuertsdag" class="accordion-collapse collapse" aria-labelledby="heading-gebuertsdag" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      anniversaire [jour anniversaire de la naissance]  <a href="https://lod.lu/artikel/GEBUERTSDAG1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-bestuet">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-bestuet" aria-expanded="false" aria-controls="collapse-bestuet">
+	      bestuet&nbsp;
+	      <small class="text-secondary">
+	        (adjectif)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-bestuet" class="accordion-collapse collapse" aria-labelledby="heading-bestuet" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      marié  <a href="https://lod.lu/artikel/BESTUET1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-jonggesell">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-jonggesell" aria-expanded="false" aria-controls="collapse-jonggesell">
+	      Jonggesell&nbsp;
+	      <small class="text-secondary">
+	        (substantif <i class="bi bi-gender-male text-m"></i>)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-jonggesell" class="accordion-collapse collapse" aria-labelledby="heading-jonggesell" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      célibataire  <a href="https://lod.lu/artikel/JONGGESELL1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-bouf">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-bouf" aria-expanded="false" aria-controls="collapse-bouf">
+	      Bouf&nbsp;
+	      <small class="text-secondary">
+	        (substantif <i class="bi bi-gender-male text-m"></i>)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-bouf" class="accordion-collapse collapse" aria-labelledby="heading-bouf" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      garçon [enfant]  <a href="https://lod.lu/artikel/BOUF1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-awunner">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-awunner" aria-expanded="false" aria-controls="collapse-awunner">
+	      Awunner&nbsp;
+	      <small class="text-secondary">
+	        (substantif <i class="bi bi-gender-male text-m"></i>)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-awunner" class="accordion-collapse collapse" aria-labelledby="heading-awunner" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      habitant, résident  <a href="https://lod.lu/artikel/AWUNNER1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+</div>
+    </section>
+    <!-- end vocabulaire section -->
+</div>
+	<!-- end content -->
+	</main>
+	<!-- footer -->
+	<footer class="mt-4">
+	<div class="bg-c2 text-light container-flex py-4 pb-sm-4 pt-sm-5">
+		<div class="container">
+			<div class="row g-3">
+				<div class="col-12 col-md-6">
+					<h6 class="footer-title">Chapitres</h6>	
+					<div class="row">
+						
+						<div class="col-4">
+							<a href="/lcm/chapitre/kapitel-1" class="btn link-footer">
+								<i class="bi bi-bookmark"></i> Kapitel 1
+							</a>
+						</div>
+						
+						<div class="col-4">
+							<a href="/lcm/chapitre/kapitel-2" class="btn link-footer">
+								<i class="bi bi-bookmark"></i> Kapitel 2
+							</a>
+						</div>
+						
+						<div class="col-4">
+							<a href="/lcm/chapitre/kapitel-3" class="btn link-footer">
+								<i class="bi bi-bookmark"></i> Kapitel 3
+							</a>
+						</div>
+						
+						<div class="col-4">
+							<a href="/lcm/chapitre/kapitel-4" class="btn link-footer">
+								<i class="bi bi-bookmark"></i> Kapitel 4
+							</a>
+						</div>
+						
+						<div class="col-4">
+							<a href="/lcm/chapitre/kapitel-5" class="btn link-footer">
+								<i class="bi bi-bookmark"></i> Kapitel 5
+							</a>
+						</div>
+						
+					</div>
+				</div>
+				<div class="col-6 col-md-3">
+					<h6 class="footer-title">Raccourcis</h6>
+					<div class="row">
+						<div class="col-12">
+							<a href="/lcm/vocabulaire" class="btn link-footer">
+								<i class="bi bi-list-columns-reverse"></i> Vocabulaire
+							</a>
+						</div>
+						<div class="col-12">
+							<a href="/lcm/conjugaison" class="btn link-footer">
+								<i class="bi bi-card-list"></i> Conjugaison
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-6 col-md-3">
+					<h6 class="footer-title">Liens utiles</h6>
+					<div class="row rows-col-1">
+						<div class="col-12">
+							<a href="https://sdl.inll.lu/?page_id=720" target="_blank" class="btn link-footer">
+								<i class="bi bi-book"></i> sdl.inll.lu
+							</a>
+						</div>
+						<div class="col-12">
+							<a href="https://lod.lu/" target="_blank" class="btn link-footer">
+								<i class="bi bi-translate"></i> lod.lu
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer-bottom container-flex">
+		<p class="m-0">&copy; Luxembourgish Course Material</p>
+	</div>
+</footer>
+	<!-- end footer -->
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+	<script src="/lcm/assets/js/main.js"></script>
+</body>
+</html>

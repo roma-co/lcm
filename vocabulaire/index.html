@@ -1,0 +1,1841 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Support de cours pour le livre Schwätzt Dir Lëtzebuergesch? A1.">
+  <meta name="author" content="R. Cothenet">
+  <title>Luxembourgish course material</title>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/lcm/assets/img/favicon-180x180.png">
+  <link rel="icon" type="image/png" href="/lcm/assets/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" href="/lcm/assets/img/favicon-192x192.png">
+
+  <!-- Bootsrap CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/lcm/assets/css/main.css">
+</head>
+
+<body>
+	<script>/* add darkmode on load if already set */
+	if (localStorage.getItem('theme') === 'dark') document.body.className = 'darkmode';
+	</script>
+	<header>
+	<!-- navbar -->
+	<nav class="navbar navbar-expand-md navbar-dark fixed-top shadow" role="navigation">
+  <div class="container">
+    <a class="navbar-brand" href="/lcm/"><i class="bi bi-house-fill"></i></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="toggler-icon top-bar"></span>
+      <span class="toggler-icon middle-bar"></span>
+      <span class="toggler-icon bottom-bar"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav me-md-auto mb-2 mb-md-0">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="/lcm/">Accueil</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Chapitres
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark bg-c4" style="border:none;">
+    			
+    				<li class="nav-item">
+    					<a class="dropdown-item" href="/lcm/chapitre/kapitel-1">
+    						<span class="d-inline-block rounded-circle p-1" style="background-color: #ffcc00"></span> Kapitel 1
+    					</a></li>
+    				<li class="nav-item">
+    					<a class="dropdown-item" href="/lcm/chapitre/kapitel-2">
+    						<span class="d-inline-block rounded-circle p-1" style="background-color: #ff9900"></span> Kapitel 2
+    					</a></li>
+    				<li class="nav-item">
+    					<a class="dropdown-item" href="/lcm/chapitre/kapitel-3">
+    						<span class="d-inline-block rounded-circle p-1" style="background-color: #cc0000"></span> Kapitel 3
+    					</a></li>
+    				<li class="nav-item">
+    					<a class="dropdown-item" href="/lcm/chapitre/kapitel-4">
+    						<span class="d-inline-block rounded-circle p-1" style="background-color: #990066"></span> Kapitel 4
+    					</a></li>
+    				<li class="nav-item">
+    					<a class="dropdown-item" href="/lcm/chapitre/kapitel-5">
+    						<span class="d-inline-block rounded-circle p-1" style="background-color: #3300cc"></span> Kapitel 5
+    					</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/lcm/conjugaison">Conjugaison</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/lcm/vocabulaire">Vocabulaire</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+            <button id="dark-mode-toggle" type="button" class="btn" aria-label="toggle dark mode"><i class="bi bi-circle-half"></i></button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+	<!-- end navbar -->
+	</header>
+	<main>
+	<!-- content -->
+	<div class="bg-c2 text-main mb-2">
+    <div class="container pt-4 pb-3 pb-sm-4 pt-sm-5">
+        <h2 class="pb-2 fw-semibold">Vocabulaire</h2>
+    </div>
+</div>
+
+<div class="container my-4">
+    <div class="accordion col-md-8 col-lg-6" id="accordionVocList">
+	
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-bild">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-bild" aria-expanded="false" aria-controls="collapse-bild">
+	      Bild&nbsp;
+	      <small class="text-secondary">
+	        (substantif <i class="bi bi-record text-n"></i>)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-bild" class="accordion-collapse collapse" aria-labelledby="heading-bild" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      image  <a href="https://lod.lu/artikel/BILD1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-sait">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-sait" aria-expanded="false" aria-controls="collapse-sait">
+	      Säit&nbsp;
+	      <small class="text-secondary">
+	        (substantif <i class="bi bi-gender-female text-f"></i>)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-sait" class="accordion-collapse collapse" aria-labelledby="heading-sait" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      page  <a href="https://lod.lu/artikel/SAIT1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-moien">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-moien" aria-expanded="false" aria-controls="collapse-moien">
+	      moien&nbsp;
+	      <small class="text-secondary">
+	        (interjection)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-moien" class="accordion-collapse collapse" aria-labelledby="heading-moien" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      bonjour  <a href="https://lod.lu/artikel/MOIEN2" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-guddeMetteg">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-guddeMetteg" aria-expanded="false" aria-controls="collapse-guddeMetteg">
+	      gudde Mëtteg&nbsp;
+	      <small class="text-secondary">
+	        (interjection)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-guddeMetteg" class="accordion-collapse collapse" aria-labelledby="heading-guddeMetteg" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      bonjour [à partir de midi] 
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-guttnuecht">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-guttnuecht" aria-expanded="false" aria-controls="collapse-guttnuecht">
+	      gutt Nuecht&nbsp;
+	      <small class="text-secondary">
+	        (interjection)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-guttnuecht" class="accordion-collapse collapse" aria-labelledby="heading-guttnuecht" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      bonne nuit 
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-merciglaichfalls">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-merciglaichfalls" aria-expanded="false" aria-controls="collapse-merciglaichfalls">
+	      merci gläichfalls&nbsp;
+	      <small class="text-secondary">
+	        (interjection)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-merciglaichfalls" class="accordion-collapse collapse" aria-labelledby="heading-merciglaichfalls" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      merci pareillement  
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-sinn">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-sinn" aria-expanded="false" aria-controls="collapse-sinn">
+	      sinn&nbsp;
+	      <small class="text-secondary">
+	        (verbe)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-sinn" class="accordion-collapse collapse" aria-labelledby="heading-sinn" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      être  <a href="https://lod.lu/artikel/SINN1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-heeschen">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-heeschen" aria-expanded="false" aria-controls="collapse-heeschen">
+	      heeschen&nbsp;
+	      <small class="text-secondary">
+	        (verbe)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-heeschen" class="accordion-collapse collapse" aria-labelledby="heading-heeschen" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      s'appeler  <a href="https://lod.lu/artikel/HEESCHEN1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-schreiwen">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-schreiwen" aria-expanded="false" aria-controls="collapse-schreiwen">
+	      schreiwen&nbsp;
+	      <small class="text-secondary">
+	        (verbe)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-schreiwen" class="accordion-collapse collapse" aria-labelledby="heading-schreiwen" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      écrire  <a href="https://lod.lu/artikel/SCHREIWEN1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-duzen">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-duzen" aria-expanded="false" aria-controls="collapse-duzen">
+	      duzen&nbsp;
+	      <small class="text-secondary">
+	        (verbe)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-duzen" class="accordion-collapse collapse" aria-labelledby="heading-duzen" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      tutoyer  <a href="https://lod.lu/artikel/DUZEN1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-bushtaweieren">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-bushtaweieren" aria-expanded="false" aria-controls="collapse-bushtaweieren">
+	      bushtawéieren&nbsp;
+	      <small class="text-secondary">
+	        (verbe)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-bushtaweieren" class="accordion-collapse collapse" aria-labelledby="heading-bushtaweieren" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      épeler  <a href="https://lod.lu/artikel/BUSCHTAWEIEREN1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-kommen">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-kommen" aria-expanded="false" aria-controls="collapse-kommen">
+	      kommen&nbsp;
+	      <small class="text-secondary">
+	        (verbe)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-kommen" class="accordion-collapse collapse" aria-labelledby="heading-kommen" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      s'approcher, venir  <a href="https://lod.lu/artikel/KOMMEN1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-leieren">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-leieren" aria-expanded="false" aria-controls="collapse-leieren">
+	      léieren&nbsp;
+	      <small class="text-secondary">
+	        (verbe)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-leieren" class="accordion-collapse collapse" aria-labelledby="heading-leieren" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      apprendre  <a href="https://lod.lu/artikel/LEIEREN2" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-schwatzen">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-schwatzen" aria-expanded="false" aria-controls="collapse-schwatzen">
+	      schwätzen&nbsp;
+	      <small class="text-secondary">
+	        (verbe)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-schwatzen" class="accordion-collapse collapse" aria-labelledby="heading-schwatzen" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      parler  <a href="https://lod.lu/artikel/SCHWATZEN1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-numm">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-numm" aria-expanded="false" aria-controls="collapse-numm">
+	      Numm&nbsp;
+	      <small class="text-secondary">
+	        (substantif <i class="bi bi-gender-male text-m"></i>)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-numm" class="accordion-collapse collapse" aria-labelledby="heading-numm" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      nom [d'une personne, d'un animal]  <a href="https://lod.lu/artikel/NUMM1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-familljennum">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-familljennum" aria-expanded="false" aria-controls="collapse-familljennum">
+	      Familljennum&nbsp;
+	      <small class="text-secondary">
+	        (substantif <i class="bi bi-gender-male text-m"></i>)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-familljennum" class="accordion-collapse collapse" aria-labelledby="heading-familljennum" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      nom (de famille)  <a href="https://lod.lu/artikel/FAMILLJENNUMM1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-virnumm">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-virnumm" aria-expanded="false" aria-controls="collapse-virnumm">
+	      Virnumm&nbsp;
+	      <small class="text-secondary">
+	        (substantif <i class="bi bi-gender-male text-m"></i>)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-virnumm" class="accordion-collapse collapse" aria-labelledby="heading-virnumm" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      prénom  <a href="https://lod.lu/artikel/VIRNUMM1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-faarf">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-faarf" aria-expanded="false" aria-controls="collapse-faarf">
+	      Faarf&nbsp;
+	      <small class="text-secondary">
+	        (substantif <i class="bi bi-gender-female text-f"></i>)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-faarf" class="accordion-collapse collapse" aria-labelledby="heading-faarf" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      couleur  <a href="https://lod.lu/artikel/FAARF1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-fandel">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-fandel" aria-expanded="false" aria-controls="collapse-fandel">
+	      Fändel&nbsp;
+	      <small class="text-secondary">
+	        (substantif <i class="bi bi-gender-female text-f"></i>)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-fandel" class="accordion-collapse collapse" aria-labelledby="heading-fandel" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      drapeau  <a href="https://lod.lu/artikel/FANDEL1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-sprooch">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-sprooch" aria-expanded="false" aria-controls="collapse-sprooch">
+	      Sprooch&nbsp;
+	      <small class="text-secondary">
+	        (substantif <i class="bi bi-gender-female text-f"></i>)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-sprooch" class="accordion-collapse collapse" aria-labelledby="heading-sprooch" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      langue  <a href="https://lod.lu/artikel/SPROOCH1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-land">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-land" aria-expanded="false" aria-controls="collapse-land">
+	      Land&nbsp;
+	      <small class="text-secondary">
+	        (substantif <i class="bi bi-record text-n"></i>)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-land" class="accordion-collapse collapse" aria-labelledby="heading-land" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      pays  <a href="https://lod.lu/artikel/LAND1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-uertschaft">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-uertschaft" aria-expanded="false" aria-controls="collapse-uertschaft">
+	      Uertschaft&nbsp;
+	      <small class="text-secondary">
+	        (substantif <i class="bi bi-gender-female text-f"></i>)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-uertschaft" class="accordion-collapse collapse" aria-labelledby="heading-uertschaft" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      localité  <a href="https://lod.lu/artikel/UERTSCHAFT1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-stad">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-stad" aria-expanded="false" aria-controls="collapse-stad">
+	      Stad&nbsp;
+	      <small class="text-secondary">
+	        (substantif <i class="bi bi-gender-female text-f"></i>)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-stad" class="accordion-collapse collapse" aria-labelledby="heading-stad" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      ville  <a href="https://lod.lu/artikel/STAD1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-virgescheter">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-virgescheter" aria-expanded="false" aria-controls="collapse-virgescheter">
+	      virgëscheter&nbsp;
+	      <small class="text-secondary">
+	        (adverbe)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-virgescheter" class="accordion-collapse collapse" aria-labelledby="heading-virgescheter" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      avant-hier  <a href="https://lod.lu/artikel/VIRGESCHTER1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-geschter">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-geschter" aria-expanded="false" aria-controls="collapse-geschter">
+	      gëschter&nbsp;
+	      <small class="text-secondary">
+	        (adverbe)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-geschter" class="accordion-collapse collapse" aria-labelledby="heading-geschter" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      hier  <a href="https://lod.lu/artikel/GESCHTER1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-haut">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-haut" aria-expanded="false" aria-controls="collapse-haut">
+	      haut&nbsp;
+	      <small class="text-secondary">
+	        (adverbe)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-haut" class="accordion-collapse collapse" aria-labelledby="heading-haut" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      aujourd'hui  <a href="https://lod.lu/artikel/HAUT1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-muer">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-muer" aria-expanded="false" aria-controls="collapse-muer">
+	      muer&nbsp;
+	      <small class="text-secondary">
+	        (adverbe)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-muer" class="accordion-collapse collapse" aria-labelledby="heading-muer" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      demain  <a href="https://lod.lu/artikel/MUER1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-iwwermuer">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-iwwermuer" aria-expanded="false" aria-controls="collapse-iwwermuer">
+	      iwwermuer&nbsp;
+	      <small class="text-secondary">
+	        (adverbe)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-iwwermuer" class="accordion-collapse collapse" aria-labelledby="heading-iwwermuer" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      après-demain  <a href="https://lod.lu/artikel/IWWERMUER1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-meindeg">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-meindeg" aria-expanded="false" aria-controls="collapse-meindeg">
+	      Méindeg&nbsp;
+	      <small class="text-secondary">
+	        (substantif <i class="bi bi-gender-male text-m"></i>)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-meindeg" class="accordion-collapse collapse" aria-labelledby="heading-meindeg" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      lundi  <a href="https://lod.lu/artikel/MEINDEG1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-denschdeg">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-denschdeg" aria-expanded="false" aria-controls="collapse-denschdeg">
+	      Dënschdeg&nbsp;
+	      <small class="text-secondary">
+	        (substantif <i class="bi bi-gender-male text-m"></i>)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-denschdeg" class="accordion-collapse collapse" aria-labelledby="heading-denschdeg" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      mardi  <a href="https://lod.lu/artikel/DENSCHDEG1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-mettwoch">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-mettwoch" aria-expanded="false" aria-controls="collapse-mettwoch">
+	      Mëttwoch&nbsp;
+	      <small class="text-secondary">
+	        (substantif <i class="bi bi-gender-male text-m"></i>)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-mettwoch" class="accordion-collapse collapse" aria-labelledby="heading-mettwoch" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      mercredi  <a href="https://lod.lu/artikel/METTWOCH1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-donneschdeg">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-donneschdeg" aria-expanded="false" aria-controls="collapse-donneschdeg">
+	      Donneschdeg&nbsp;
+	      <small class="text-secondary">
+	        (substantif <i class="bi bi-gender-male text-m"></i>)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-donneschdeg" class="accordion-collapse collapse" aria-labelledby="heading-donneschdeg" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      jeudi  <a href="https://lod.lu/artikel/DONNESCHDEG1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-freideg">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-freideg" aria-expanded="false" aria-controls="collapse-freideg">
+	      Freideg&nbsp;
+	      <small class="text-secondary">
+	        (substantif <i class="bi bi-gender-male text-m"></i>)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-freideg" class="accordion-collapse collapse" aria-labelledby="heading-freideg" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      vendredi  <a href="https://lod.lu/artikel/FREIDEG1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-samschdeg">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-samschdeg" aria-expanded="false" aria-controls="collapse-samschdeg">
+	      Samschdeg&nbsp;
+	      <small class="text-secondary">
+	        (substantif <i class="bi bi-gender-male text-m"></i>)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-samschdeg" class="accordion-collapse collapse" aria-labelledby="heading-samschdeg" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      samedi  <a href="https://lod.lu/artikel/SAMSCHDEG1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-sonndeg">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-sonndeg" aria-expanded="false" aria-controls="collapse-sonndeg">
+	      Sonndeg&nbsp;
+	      <small class="text-secondary">
+	        (substantif <i class="bi bi-gender-male text-m"></i>)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-sonndeg" class="accordion-collapse collapse" aria-labelledby="heading-sonndeg" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      dimanche  <a href="https://lod.lu/artikel/SONNDEG1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-gebuertsdag">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-gebuertsdag" aria-expanded="false" aria-controls="collapse-gebuertsdag">
+	      Gebuertsdag&nbsp;
+	      <small class="text-secondary">
+	        (substantif <i class="bi bi-gender-male text-m"></i>)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-gebuertsdag" class="accordion-collapse collapse" aria-labelledby="heading-gebuertsdag" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      anniversaire [jour anniversaire de la naissance]  <a href="https://lod.lu/artikel/GEBUERTSDAG1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-bestuet">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-bestuet" aria-expanded="false" aria-controls="collapse-bestuet">
+	      bestuet&nbsp;
+	      <small class="text-secondary">
+	        (adjectif)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-bestuet" class="accordion-collapse collapse" aria-labelledby="heading-bestuet" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      marié  <a href="https://lod.lu/artikel/BESTUET1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-jonggesell">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-jonggesell" aria-expanded="false" aria-controls="collapse-jonggesell">
+	      Jonggesell&nbsp;
+	      <small class="text-secondary">
+	        (substantif <i class="bi bi-gender-male text-m"></i>)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-jonggesell" class="accordion-collapse collapse" aria-labelledby="heading-jonggesell" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      célibataire  <a href="https://lod.lu/artikel/JONGGESELL1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-bouf">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-bouf" aria-expanded="false" aria-controls="collapse-bouf">
+	      Bouf&nbsp;
+	      <small class="text-secondary">
+	        (substantif <i class="bi bi-gender-male text-m"></i>)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-bouf" class="accordion-collapse collapse" aria-labelledby="heading-bouf" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      garçon [enfant]  <a href="https://lod.lu/artikel/BOUF1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-awunner">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-awunner" aria-expanded="false" aria-controls="collapse-awunner">
+	      Awunner&nbsp;
+	      <small class="text-secondary">
+	        (substantif <i class="bi bi-gender-male text-m"></i>)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-awunner" class="accordion-collapse collapse" aria-labelledby="heading-awunner" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      habitant, résident  <a href="https://lod.lu/artikel/AWUNNER1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-beruff">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-beruff" aria-expanded="false" aria-controls="collapse-beruff">
+	      Beruff&nbsp;
+	      <small class="text-secondary">
+	        (substantif <i class="bi bi-gender-male text-m"></i>)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-beruff" class="accordion-collapse collapse" aria-labelledby="heading-beruff" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      métier [profession]  <a href="https://lod.lu/artikel/BERUFF1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-aarbecht">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-aarbecht" aria-expanded="false" aria-controls="collapse-aarbecht">
+	      Aarbecht&nbsp;
+	      <small class="text-secondary">
+	        (substantif <i class="bi bi-gender-female text-f"></i>)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-aarbecht" class="accordion-collapse collapse" aria-labelledby="heading-aarbecht" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      travail [occupation, activité]  <a href="https://lod.lu/artikel/AARBECHT1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-affekot">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-affekot" aria-expanded="false" aria-controls="collapse-affekot">
+	      Affekot&nbsp;
+	      <small class="text-secondary">
+	        (substantif <i class="bi bi-gender-male text-m"></i>)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-affekot" class="accordion-collapse collapse" aria-labelledby="heading-affekot" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      avocat [auxiliaire de justice]  <a href="https://lod.lu/artikel/AFFEKOT1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-affekotin">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-affekotin" aria-expanded="false" aria-controls="collapse-affekotin">
+	      Affekotin&nbsp;
+	      <small class="text-secondary">
+	        (substantif <i class="bi bi-gender-female text-f"></i>)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-affekotin" class="accordion-collapse collapse" aria-labelledby="heading-affekotin" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      avocate  <a href="https://lod.lu/artikel/AFFEKOTIN1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-verkeefer">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-verkeefer" aria-expanded="false" aria-controls="collapse-verkeefer">
+	      Verkeefer&nbsp;
+	      <small class="text-secondary">
+	        (substantif <i class="bi bi-gender-male text-m"></i>)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-verkeefer" class="accordion-collapse collapse" aria-labelledby="heading-verkeefer" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      vendeur  <a href="https://lod.lu/artikel/VERKEEFER1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-verkeeferin">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-verkeeferin" aria-expanded="false" aria-controls="collapse-verkeeferin">
+	      Verkeeferin&nbsp;
+	      <small class="text-secondary">
+	        (substantif <i class="bi bi-gender-female text-f"></i>)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-verkeeferin" class="accordion-collapse collapse" aria-labelledby="heading-verkeeferin" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      vendeuse  <a href="https://lod.lu/artikel/VERKEEFERIN1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-coiffer">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-coiffer" aria-expanded="false" aria-controls="collapse-coiffer">
+	      Coiffer&nbsp;
+	      <small class="text-secondary">
+	        (substantif <i class="bi bi-gender-male text-m"></i>)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-coiffer" class="accordion-collapse collapse" aria-labelledby="heading-coiffer" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      coiffeur  <a href="https://lod.lu/artikel/COIFFER1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-coiffeuse">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-coiffeuse" aria-expanded="false" aria-controls="collapse-coiffeuse">
+	      Coiffeuse&nbsp;
+	      <small class="text-secondary">
+	        (substantif <i class="bi bi-gender-female text-f"></i>)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-coiffeuse" class="accordion-collapse collapse" aria-labelledby="heading-coiffeuse" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      coiffeuse  <a href="https://lod.lu/artikel/COIFFEUSE1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-altersheem">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-altersheem" aria-expanded="false" aria-controls="collapse-altersheem">
+	      Altersheem&nbsp;
+	      <small class="text-secondary">
+	        (substantif <i class="bi bi-record text-n"></i>)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-altersheem" class="accordion-collapse collapse" aria-labelledby="heading-altersheem" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      maison de retraite  <a href="https://lod.lu/artikel/ALTERSHEEM1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-verkeier">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-verkeier" aria-expanded="false" aria-controls="collapse-verkeier">
+	      Verkéier&nbsp;
+	      <small class="text-secondary">
+	        (substantif <i class="bi bi-gender-male text-m"></i>)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-verkeier" class="accordion-collapse collapse" aria-labelledby="heading-verkeier" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      trafic [circulation routière]  <a href="https://lod.lu/artikel/VERKEIER1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-stau">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-stau" aria-expanded="false" aria-controls="collapse-stau">
+	      Stau&nbsp;
+	      <small class="text-secondary">
+	        (substantif <i class="bi bi-gender-male text-m"></i>)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-stau" class="accordion-collapse collapse" aria-labelledby="heading-stau" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      embouteillage, bouchon  <a href="https://lod.lu/artikel/STAU1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-zuch">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-zuch" aria-expanded="false" aria-controls="collapse-zuch">
+	      Zuch&nbsp;
+	      <small class="text-secondary">
+	        (substantif <i class="bi bi-gender-male text-m"></i>)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-zuch" class="accordion-collapse collapse" aria-labelledby="heading-zuch" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      train [de chemin de fer]  <a href="https://lod.lu/artikel/ZUCH1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-stonn">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-stonn" aria-expanded="false" aria-controls="collapse-stonn">
+	      Stonn&nbsp;
+	      <small class="text-secondary">
+	        (substantif <i class="bi bi-gender-female text-f"></i>)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-stonn" class="accordion-collapse collapse" aria-labelledby="heading-stonn" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      heure [unité de temps]  <a href="https://lod.lu/artikel/STONN1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-selbstanneg">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-selbstanneg" aria-expanded="false" aria-controls="collapse-selbstanneg">
+	      selbstänneg&nbsp;
+	      <small class="text-secondary">
+	        (adjectif)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-selbstanneg" class="accordion-collapse collapse" aria-labelledby="heading-selbstanneg" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      autonome, indépendant [installé à son compte]  <a href="https://lod.lu/artikel/SELBSTANNEG1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-praktesch">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-praktesch" aria-expanded="false" aria-controls="collapse-praktesch">
+	      praktesch&nbsp;
+	      <small class="text-secondary">
+	        (adjectif)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-praktesch" class="accordion-collapse collapse" aria-labelledby="heading-praktesch" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      pratique [fonctionnel]  <a href="https://lod.lu/artikel/PRAKTESCH1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-drengend">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-drengend" aria-expanded="false" aria-controls="collapse-drengend">
+	      dréngend&nbsp;
+	      <small class="text-secondary">
+	        (adjectif)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-drengend" class="accordion-collapse collapse" aria-labelledby="heading-drengend" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      urgent, pressant  <a href="https://lod.lu/artikel/DRENGEND2" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-seier">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-seier" aria-expanded="false" aria-controls="collapse-seier">
+	      séier&nbsp;
+	      <small class="text-secondary">
+	        (adjectif)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-seier" class="accordion-collapse collapse" aria-labelledby="heading-seier" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      rapide  <a href="https://lod.lu/artikel/SEIER1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-schaffen">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-schaffen" aria-expanded="false" aria-controls="collapse-schaffen">
+	      schaffen&nbsp;
+	      <small class="text-secondary">
+	        (verbe)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-schaffen" class="accordion-collapse collapse" aria-labelledby="heading-schaffen" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      travailler  <a href="https://lod.lu/artikel/SCHAFFEN3" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-ufanken">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-ufanken" aria-expanded="false" aria-controls="collapse-ufanken">
+	      ufänken&nbsp;
+	      <small class="text-secondary">
+	        (verbe)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-ufanken" class="accordion-collapse collapse" aria-labelledby="heading-ufanken" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      commencer, débuter  <a href="https://lod.lu/artikel/UFANKEN1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-schecken">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-schecken" aria-expanded="false" aria-controls="collapse-schecken">
+	      schécken&nbsp;
+	      <small class="text-secondary">
+	        (verbe)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-schecken" class="accordion-collapse collapse" aria-labelledby="heading-schecken" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      envoyer [expédier, transmettre]  <a href="https://lod.lu/artikel/SCHECKEN1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-schneiden">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-schneiden" aria-expanded="false" aria-controls="collapse-schneiden">
+	      schneiden&nbsp;
+	      <small class="text-secondary">
+	        (verbe)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-schneiden" class="accordion-collapse collapse" aria-labelledby="heading-schneiden" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      couper, découper, tailler  <a href="https://lod.lu/artikel/SCHNEIDEN1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-fraizait">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-fraizait" aria-expanded="false" aria-controls="collapse-fraizait">
+	      Fräizäit&nbsp;
+	      <small class="text-secondary">
+	        (substantif <i class="bi bi-gender-female text-f"></i>)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-fraizait" class="accordion-collapse collapse" aria-labelledby="heading-fraizait" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      temps libre [loisir]  <a href="https://lod.lu/artikel/FRAIZAIT1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-dagesoflaf">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-dagesoflaf" aria-expanded="false" aria-controls="collapse-dagesoflaf">
+	      Dagesoflaf&nbsp;
+	      <small class="text-secondary">
+	        (substantif <i class="bi bi-gender-male text-m"></i>)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-dagesoflaf" class="accordion-collapse collapse" aria-labelledby="heading-dagesoflaf" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      (déroulement de la) journée, emploi du temps  <a href="https://lod.lu/artikel/DAGESOFLAF1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-daagsiwwer">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-daagsiwwer" aria-expanded="false" aria-controls="collapse-daagsiwwer">
+	      daagsiwwer&nbsp;
+	      <small class="text-secondary">
+	        (adverbe)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-daagsiwwer" class="accordion-collapse collapse" aria-labelledby="heading-daagsiwwer" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      pendant la journée  <a href="https://lod.lu/artikel/DAAGSIWWER1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-zesummen">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-zesummen" aria-expanded="false" aria-controls="collapse-zesummen">
+	      zesummen&nbsp;
+	      <small class="text-secondary">
+	        (adverbe)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-zesummen" class="accordion-collapse collapse" aria-labelledby="heading-zesummen" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      ensemble [l'un avec l'autre, les uns avec les autres]  <a href="https://lod.lu/artikel/ZESUMMEN1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-ausser">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-ausser" aria-expanded="false" aria-controls="collapse-ausser">
+	      ausser&nbsp;
+	      <small class="text-secondary">
+	        (conjonction)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-ausser" class="accordion-collapse collapse" aria-labelledby="heading-ausser" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      sauf, à moins que, excepté  <a href="https://lod.lu/artikel/AUSSER1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-erwachen">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-erwachen" aria-expanded="false" aria-controls="collapse-erwachen">
+	      erwächen&nbsp;
+	      <small class="text-secondary">
+	        (verbe)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-erwachen" class="accordion-collapse collapse" aria-labelledby="heading-erwachen" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      réveiller [tirer du sommeil]  <a href="https://lod.lu/artikel/ERWACHEN1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-beroden">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-beroden" aria-expanded="false" aria-controls="collapse-beroden">
+	      beroden&nbsp;
+	      <small class="text-secondary">
+	        (verbe)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-beroden" class="accordion-collapse collapse" aria-labelledby="heading-beroden" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      conseiller [donner des recommandations à]  <a href="https://lod.lu/artikel/BERODEN1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-spillen">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-spillen" aria-expanded="false" aria-controls="collapse-spillen">
+	      spillen&nbsp;
+	      <small class="text-secondary">
+	        (verbe)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-spillen" class="accordion-collapse collapse" aria-labelledby="heading-spillen" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      jouer à [un jeu]  <a href="https://lod.lu/artikel/SPILLEN1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-drenken">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-drenken" aria-expanded="false" aria-controls="collapse-drenken">
+	      drénken&nbsp;
+	      <small class="text-secondary">
+	        (verbe)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-drenken" class="accordion-collapse collapse" aria-labelledby="heading-drenken" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      boire [avaler, absorber]  <a href="https://lod.lu/artikel/DRENKEN1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-kaffidrenken">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-kaffidrenken" aria-expanded="false" aria-controls="collapse-kaffidrenken">
+	      Kaffi drénken&nbsp;
+	      <small class="text-secondary">
+	        (verbe)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-kaffidrenken" class="accordion-collapse collapse" aria-labelledby="heading-kaffidrenken" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      prendre le petit-déjeuner  <a href="https://lod.lu/artikel/DRENKEN1#highlight=Kaffi+dr%C3%A9nken" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-iessen">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-iessen" aria-expanded="false" aria-controls="collapse-iessen">
+	      iessen&nbsp;
+	      <small class="text-secondary">
+	        (verbe)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-iessen" class="accordion-collapse collapse" aria-labelledby="heading-iessen" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      manger  <a href="https://lod.lu/artikel/IESSEN3" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-duschen">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-duschen" aria-expanded="false" aria-controls="collapse-duschen">
+	      duschen&nbsp;
+	      <small class="text-secondary">
+	        (verbe)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-duschen" class="accordion-collapse collapse" aria-labelledby="heading-duschen" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      doucher, se doucher  <a href="https://lod.lu/artikel/DUSCHEN1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-strecken">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-strecken" aria-expanded="false" aria-controls="collapse-strecken">
+	      strécken&nbsp;
+	      <small class="text-secondary">
+	        (verbe)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-strecken" class="accordion-collapse collapse" aria-labelledby="heading-strecken" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      tricoter  <a href="https://lod.lu/artikel/STRECKEN2" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-molen">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-molen" aria-expanded="false" aria-controls="collapse-molen">
+	      molen&nbsp;
+	      <small class="text-secondary">
+	        (verbe)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-molen" class="accordion-collapse collapse" aria-labelledby="heading-molen" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      dessiner, peindre [un dessin, un tableau]  <a href="https://lod.lu/artikel/MOLEN1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-liewen">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-liewen" aria-expanded="false" aria-controls="collapse-liewen">
+	      liewen&nbsp;
+	      <small class="text-secondary">
+	        (verbe)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-liewen" class="accordion-collapse collapse" aria-labelledby="heading-liewen" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      vivre  <a href="https://lod.lu/artikel/LIEWEN2" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-schach">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-schach" aria-expanded="false" aria-controls="collapse-schach">
+	      Schach&nbsp;
+	      <small class="text-secondary">
+	        (substantif <i class="bi bi-gender-male text-m"></i>)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-schach" class="accordion-collapse collapse" aria-labelledby="heading-schach" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      échecs [jeu de plateau]  <a href="https://lod.lu/artikel/SCHACH1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-Vakanz">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-Vakanz" aria-expanded="false" aria-controls="collapse-Vakanz">
+	      Vakanz&nbsp;
+	      <small class="text-secondary">
+	        (substantif <i class="bi bi-gender-female text-f"></i>)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-Vakanz" class="accordion-collapse collapse" aria-labelledby="heading-Vakanz" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      vacances  <a href="https://lod.lu/artikel/VAKANZ1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-niwwel">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-niwwel" aria-expanded="false" aria-controls="collapse-niwwel">
+	      Niwwel&nbsp;
+	      <small class="text-secondary">
+	        (substantif <i class="bi bi-gender-male text-m"></i>)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-niwwel" class="accordion-collapse collapse" aria-labelledby="heading-niwwel" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      brouillard  <a href="https://lod.lu/artikel/NIWWEL1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-donnerwieder">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-donnerwieder" aria-expanded="false" aria-controls="collapse-donnerwieder">
+	      Donnerwieder&nbsp;
+	      <small class="text-secondary">
+	        (substantif <i class="bi bi-record text-n"></i>)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-donnerwieder" class="accordion-collapse collapse" aria-labelledby="heading-donnerwieder" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      orage  <a href="https://lod.lu/artikel/DONNERWIEDER1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-vlaicht">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-vlaicht" aria-expanded="false" aria-controls="collapse-vlaicht">
+	      vläicht&nbsp;
+	      <small class="text-secondary">
+	        (adverbe)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-vlaicht" class="accordion-collapse collapse" aria-labelledby="heading-vlaicht" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      peut-être, éventuellement  <a href="https://lod.lu/artikel/VLAICHT1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-schuedsinn">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-schuedsinn" aria-expanded="false" aria-controls="collapse-schuedsinn">
+	      schued sinn&nbsp;
+	      <small class="text-secondary">
+	        (adjectif)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-schuedsinn" class="accordion-collapse collapse" aria-labelledby="heading-schuedsinn" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      être dommage  <a href="https://lod.lu/artikel/SCHUED2" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-stresseg">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-stresseg" aria-expanded="false" aria-controls="collapse-stresseg">
+	      stresseg&nbsp;
+	      <small class="text-secondary">
+	        (adjectif)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-stresseg" class="accordion-collapse collapse" aria-labelledby="heading-stresseg" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      stressant  <a href="https://lod.lu/artikel/STRESSEG1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-belleg">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-belleg" aria-expanded="false" aria-controls="collapse-belleg">
+	      bëlleg&nbsp;
+	      <small class="text-secondary">
+	        (adjectif)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-belleg" class="accordion-collapse collapse" aria-labelledby="heading-belleg" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      bon marché [peu coûteux]  <a href="https://lod.lu/artikel/BELLEG1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-deier">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-deier" aria-expanded="false" aria-controls="collapse-deier">
+	      deier&nbsp;
+	      <small class="text-secondary">
+	        (adjectif)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-deier" class="accordion-collapse collapse" aria-labelledby="heading-deier" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      cher [coûteux]  <a href="https://lod.lu/artikel/DEIER2" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-bekannt">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-bekannt" aria-expanded="false" aria-controls="collapse-bekannt">
+	      bekannt&nbsp;
+	      <small class="text-secondary">
+	        (adjectif)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-bekannt" class="accordion-collapse collapse" aria-labelledby="heading-bekannt" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      connu  <a href="https://lod.lu/artikel/BEKANNT1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-leider">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-leider" aria-expanded="false" aria-controls="collapse-leider">
+	      leider&nbsp;
+	      <small class="text-secondary">
+	        (adverbe)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-leider" class="accordion-collapse collapse" aria-labelledby="heading-leider" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      malheureusement  <a href="https://lod.lu/artikel/LEIDER1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-bestellen">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-bestellen" aria-expanded="false" aria-controls="collapse-bestellen">
+	      bestellen&nbsp;
+	      <small class="text-secondary">
+	        (verbe)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-bestellen" class="accordion-collapse collapse" aria-labelledby="heading-bestellen" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      commander [passer commande de]  <a href="https://lod.lu/artikel/BESTELLEN1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-bewaerten">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-bewaerten" aria-expanded="false" aria-controls="collapse-bewaerten">
+	      bewäerten&nbsp;
+	      <small class="text-secondary">
+	        (verbe)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-bewaerten" class="accordion-collapse collapse" aria-labelledby="heading-bewaerten" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      évaluer, juger  <a href="https://lod.lu/artikel/BEWAERTEN1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-duergoen">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-duergoen" aria-expanded="false" aria-controls="collapse-duergoen">
+	      duergoen&nbsp;
+	      <small class="text-secondary">
+	        (verbe)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-duergoen" class="accordion-collapse collapse" aria-labelledby="heading-duergoen" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      suffire  <a href="https://lod.lu/artikel/DUERGOEN1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-waarmmaachen">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-waarmmaachen" aria-expanded="false" aria-controls="collapse-waarmmaachen">
+	      waarm maachen&nbsp;
+	      <small class="text-secondary">
+	        (verbe)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-waarmmaachen" class="accordion-collapse collapse" aria-labelledby="heading-waarmmaachen" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      (faire) chauffer, réchauffer  <a href="https://lod.lu/artikel/WAARMMAACHEN1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-matmaachen">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-matmaachen" aria-expanded="false" aria-controls="collapse-matmaachen">
+	      matmaachen&nbsp;
+	      <small class="text-secondary">
+	        (verbe)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-matmaachen" class="accordion-collapse collapse" aria-labelledby="heading-matmaachen" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      participer à, prendre part à  <a href="https://lod.lu/artikel/MATMAACHEN1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-boer">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-boer" aria-expanded="false" aria-controls="collapse-boer">
+	      boer&nbsp;
+	      <small class="text-secondary">
+	        (adjectif)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-boer" class="accordion-collapse collapse" aria-labelledby="heading-boer" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      espèces, argent liquide  <a href="https://lod.lu/artikel/BOER1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-zeideg">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-zeideg" aria-expanded="false" aria-controls="collapse-zeideg">
+	      zeideg&nbsp;
+	      <small class="text-secondary">
+	        (adjectif)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-zeideg" class="accordion-collapse collapse" aria-labelledby="heading-zeideg" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      mûr [fruit, graine]  <a href="https://lod.lu/artikel/ZEIDEG1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-safteg">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-safteg" aria-expanded="false" aria-controls="collapse-safteg">
+	      säfteg&nbsp;
+	      <small class="text-secondary">
+	        (adjectif)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-safteg" class="accordion-collapse collapse" aria-labelledby="heading-safteg" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      juteux [plein de jus]  <a href="https://lod.lu/artikel/SAFTEG1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-drechen">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-drechen" aria-expanded="false" aria-controls="collapse-drechen">
+	      dréchen&nbsp;
+	      <small class="text-secondary">
+	        (adjectif)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-drechen" class="accordion-collapse collapse" aria-labelledby="heading-drechen" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      sec  <a href="https://lod.lu/artikel/DRECHEN1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-seiss">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-seiss" aria-expanded="false" aria-controls="collapse-seiss">
+	      séiss&nbsp;
+	      <small class="text-secondary">
+	        (adjectif)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-seiss" class="accordion-collapse collapse" aria-labelledby="heading-seiss" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      sucré [goût, odeur]  <a href="https://lod.lu/artikel/SEISS1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-gaascht">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-gaascht" aria-expanded="false" aria-controls="collapse-gaascht">
+	      Gaascht&nbsp;
+	      <small class="text-secondary">
+	        (substantif <i class="bi bi-gender-male text-m"></i>)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-gaascht" class="accordion-collapse collapse" aria-labelledby="heading-gaascht" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      hôte, invité  <a href="https://lod.lu/artikel/GAASCHT1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-haaptplat">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-haaptplat" aria-expanded="false" aria-controls="collapse-haaptplat">
+	      Haaptplat&nbsp;
+	      <small class="text-secondary">
+	        (substantif <i class="bi bi-gender-male text-m"></i>)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-haaptplat" class="accordion-collapse collapse" aria-labelledby="heading-haaptplat" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      plat principal  <a href="https://lod.lu/artikel/HAAPTPLAT1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-aerdbier">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-aerdbier" aria-expanded="false" aria-controls="collapse-aerdbier">
+	      Äerdbier&nbsp;
+	      <small class="text-secondary">
+	        (substantif <i class="bi bi-record text-n"></i>)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-aerdbier" class="accordion-collapse collapse" aria-labelledby="heading-aerdbier" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      fraises [fruits]  <a href="https://lod.lu/artikel/AERDBIER2" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-muert">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-muert" aria-expanded="false" aria-controls="collapse-muert">
+	      Muert&nbsp;
+	      <small class="text-secondary">
+	        (substantif <i class="bi bi-gender-female text-f"></i>)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-muert" class="accordion-collapse collapse" aria-labelledby="heading-muert" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      carotte  <a href="https://lod.lu/artikel/MUERT1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-rais">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-rais" aria-expanded="false" aria-controls="collapse-rais">
+	      Räis&nbsp;
+	      <small class="text-secondary">
+	        (substantif <i class="bi bi-gender-male text-m"></i>)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-rais" class="accordion-collapse collapse" aria-labelledby="heading-rais" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      riz  <a href="https://lod.lu/artikel/RAIS1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-rendfleesch">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-rendfleesch" aria-expanded="false" aria-controls="collapse-rendfleesch">
+	      Rëndfleesch&nbsp;
+	      <small class="text-secondary">
+	        (substantif <i class="bi bi-record text-n"></i>)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-rendfleesch" class="accordion-collapse collapse" aria-labelledby="heading-rendfleesch" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      (viande de) boeuf, viande bovine  <a href="https://lod.lu/artikel/RENDFLEESCH1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-spruddelwaasser">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-spruddelwaasser" aria-expanded="false" aria-controls="collapse-spruddelwaasser">
+	      Spruddelwaasser&nbsp;
+	      <small class="text-secondary">
+	        (substantif <i class="bi bi-record text-n"></i>)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-spruddelwaasser" class="accordion-collapse collapse" aria-labelledby="heading-spruddelwaasser" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      eau pétillante, eau gazeuse  <a href="https://lod.lu/artikel/SPRUDDELWAASSER1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-metsch">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-metsch" aria-expanded="false" aria-controls="collapse-metsch">
+	      Mëtsch&nbsp;
+	      <small class="text-secondary">
+	        (substantif <i class="bi bi-gender-female text-f"></i>)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-metsch" class="accordion-collapse collapse" aria-labelledby="heading-metsch" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      viennoiserie  <a href="https://lod.lu/artikel/METSCH1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-paschteit">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-paschteit" aria-expanded="false" aria-controls="collapse-paschteit">
+	      Paschtéit&nbsp;
+	      <small class="text-secondary">
+	        (substantif <i class="bi bi-gender-female text-f"></i>)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-paschteit" class="accordion-collapse collapse" aria-labelledby="heading-paschteit" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      bouchée à la reine / vol-au-vent  <a href="https://lod.lu/artikel/PASCHTEIT1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-desch">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-desch" aria-expanded="false" aria-controls="collapse-desch">
+	      Dësch&nbsp;
+	      <small class="text-secondary">
+	        (substantif <i class="bi bi-gender-male text-m"></i>)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-desch" class="accordion-collapse collapse" aria-labelledby="heading-desch" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      table  <a href="https://lod.lu/artikel/DESCH1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-schaffchen">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-schaffchen" aria-expanded="false" aria-controls="collapse-schaffchen">
+	      Schäffchen&nbsp;
+	      <small class="text-secondary">
+	        (substantif <i class="bi bi-gender-male text-m"></i>)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-schaffchen" class="accordion-collapse collapse" aria-labelledby="heading-schaffchen" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      four [de cuisine]  <a href="https://lod.lu/artikel/SCHAFFCHEN1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-rescht">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-rescht" aria-expanded="false" aria-controls="collapse-rescht">
+	      Rescht&nbsp;
+	      <small class="text-secondary">
+	        (substantif <i class="bi bi-gender-male text-m"></i>)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-rescht" class="accordion-collapse collapse" aria-labelledby="heading-rescht" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      reste [quantité restante, excédent]  <a href="https://lod.lu/artikel/RESCHT1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="heading-honger">
+	    <button class="accordion-button collapsed text-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-honger" aria-expanded="false" aria-controls="collapse-honger">
+	      Honger&nbsp;
+	      <small class="text-secondary">
+	        (substantif <i class="bi bi-gender-male text-m"></i>)
+	      </small>
+	    </button>
+	  </h2>
+	  <div id="collapse-honger" class="accordion-collapse collapse" aria-labelledby="heading-honger" data-bs-parent="#accordionVocList">
+	    <div class="accordion-body pt-2">
+	      faim  <a href="https://lod.lu/artikel/HONGER1" target="_blank" role="button" class="btn btn-lod text-light bg-c4">lod.lu <i class="bi bi-box-arrow-up-right"></i></a>
+	    </div>
+	  </div>
+	</div>
+</div>
+
+</div>
+	<!-- end content -->
+	</main>
+	<!-- footer -->
+	<footer class="mt-4">
+	<div class="bg-c2 text-light container-flex py-4 pb-sm-4 pt-sm-5">
+		<div class="container">
+			<div class="row g-3">
+				<div class="col-12 col-md-6">
+					<h6 class="footer-title">Chapitres</h6>	
+					<div class="row">
+						
+						<div class="col-4">
+							<a href="/lcm/chapitre/kapitel-1" class="btn link-footer">
+								<i class="bi bi-bookmark"></i> Kapitel 1
+							</a>
+						</div>
+						
+						<div class="col-4">
+							<a href="/lcm/chapitre/kapitel-2" class="btn link-footer">
+								<i class="bi bi-bookmark"></i> Kapitel 2
+							</a>
+						</div>
+						
+						<div class="col-4">
+							<a href="/lcm/chapitre/kapitel-3" class="btn link-footer">
+								<i class="bi bi-bookmark"></i> Kapitel 3
+							</a>
+						</div>
+						
+						<div class="col-4">
+							<a href="/lcm/chapitre/kapitel-4" class="btn link-footer">
+								<i class="bi bi-bookmark"></i> Kapitel 4
+							</a>
+						</div>
+						
+						<div class="col-4">
+							<a href="/lcm/chapitre/kapitel-5" class="btn link-footer">
+								<i class="bi bi-bookmark"></i> Kapitel 5
+							</a>
+						</div>
+						
+					</div>
+				</div>
+				<div class="col-6 col-md-3">
+					<h6 class="footer-title">Raccourcis</h6>
+					<div class="row">
+						<div class="col-12">
+							<a href="/lcm/vocabulaire" class="btn link-footer">
+								<i class="bi bi-list-columns-reverse"></i> Vocabulaire
+							</a>
+						</div>
+						<div class="col-12">
+							<a href="/lcm/conjugaison" class="btn link-footer">
+								<i class="bi bi-card-list"></i> Conjugaison
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-6 col-md-3">
+					<h6 class="footer-title">Liens utiles</h6>
+					<div class="row rows-col-1">
+						<div class="col-12">
+							<a href="https://sdl.inll.lu/?page_id=720" target="_blank" class="btn link-footer">
+								<i class="bi bi-book"></i> sdl.inll.lu
+							</a>
+						</div>
+						<div class="col-12">
+							<a href="https://lod.lu/" target="_blank" class="btn link-footer">
+								<i class="bi bi-translate"></i> lod.lu
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer-bottom container-flex">
+		<p class="m-0">&copy; Luxembourgish Course Material</p>
+	</div>
+</footer>
+	<!-- end footer -->
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+	<script src="/lcm/assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,1225 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Support de cours pour le livre Schwätzt Dir Lëtzebuergesch? A1.">
+  <meta name="author" content="R. Cothenet">
+  <title>Luxembourgish course material</title>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/lcm/assets/img/favicon-180x180.png">
+  <link rel="icon" type="image/png" href="/lcm/assets/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" href="/lcm/assets/img/favicon-192x192.png">
+
+  <!-- Bootsrap CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/lcm/assets/css/main.css">
+</head>
+
+<body>
+	<script>/* add darkmode on load if already set */
+	if (localStorage.getItem('theme') === 'dark') document.body.className = 'darkmode';
+	</script>
+	<header>
+	<!-- navbar -->
+	<nav class="navbar navbar-expand-md navbar-dark fixed-top shadow" role="navigation">
+  <div class="container">
+    <a class="navbar-brand" href="/lcm/"><i class="bi bi-house-fill"></i></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="toggler-icon top-bar"></span>
+      <span class="toggler-icon middle-bar"></span>
+      <span class="toggler-icon bottom-bar"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav me-md-auto mb-2 mb-md-0">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="/lcm/">Accueil</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Chapitres
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark bg-c4" style="border:none;">
+    			
+    				<li class="nav-item">
+    					<a class="dropdown-item" href="/lcm/chapitre/kapitel-1">
+    						<span class="d-inline-block rounded-circle p-1" style="background-color: #ffcc00"></span> Kapitel 1
+    					</a></li>
+    				<li class="nav-item">
+    					<a class="dropdown-item" href="/lcm/chapitre/kapitel-2">
+    						<span class="d-inline-block rounded-circle p-1" style="background-color: #ff9900"></span> Kapitel 2
+    					</a></li>
+    				<li class="nav-item">
+    					<a class="dropdown-item" href="/lcm/chapitre/kapitel-3">
+    						<span class="d-inline-block rounded-circle p-1" style="background-color: #cc0000"></span> Kapitel 3
+    					</a></li>
+    				<li class="nav-item">
+    					<a class="dropdown-item" href="/lcm/chapitre/kapitel-4">
+    						<span class="d-inline-block rounded-circle p-1" style="background-color: #990066"></span> Kapitel 4
+    					</a></li>
+    				<li class="nav-item">
+    					<a class="dropdown-item" href="/lcm/chapitre/kapitel-5">
+    						<span class="d-inline-block rounded-circle p-1" style="background-color: #3300cc"></span> Kapitel 5
+    					</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/lcm/conjugaison">Conjugaison</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/lcm/vocabulaire">Vocabulaire</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+            <button id="dark-mode-toggle" type="button" class="btn" aria-label="toggle dark mode"><i class="bi bi-circle-half"></i></button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+	<!-- end navbar -->
+	</header>
+	<main>
+	<!-- content -->
+	<div class="bg-c2 text-main mb-2">
+    <div class="container pt-4 pb-3 pb-sm-4 pt-sm-5">
+        <h2 class="pb-2 fw-semibold">Conjugaison</h2>
+    </div>
+</div>
+
+<div class="container my-4">
+    
+<p>
+	<a class="btn btn-sm bg-c2 text-secondary rounded-4 my-1 mx-1" onclick="jump('kapitel-1')">
+		Kapitel 1 <i class="bi bi-arrow-down-circle-fill" style="color: #ffcc00"></i>
+	</a>
+
+	<a class="btn btn-sm bg-c2 text-secondary rounded-4 my-1 mx-1" onclick="jump('kapitel-2')">
+		Kapitel 2 <i class="bi bi-arrow-down-circle-fill" style="color: #ff9900"></i>
+	</a>
+
+	<a class="btn btn-sm bg-c2 text-secondary rounded-4 my-1 mx-1" onclick="jump('kapitel-3')">
+		Kapitel 3 <i class="bi bi-arrow-down-circle-fill" style="color: #cc0000"></i>
+	</a>
+
+	<a class="btn btn-sm bg-c2 text-secondary rounded-4 my-1 mx-1" onclick="jump('kapitel-4')">
+		Kapitel 4 <i class="bi bi-arrow-down-circle-fill" style="color: #990066"></i>
+	</a>
+
+	<a class="btn btn-sm bg-c2 text-secondary rounded-4 my-1 mx-1" onclick="jump('kapitel-5')">
+		Kapitel 5 <i class="bi bi-arrow-down-circle-fill" style="color: #3300cc"></i>
+	</a>
+</p>
+
+<div class="row g-3" data-masonry="{&quot;percentPosition&quot;: true }">
+	
+	<div class="col-12 col-sm-6 col-lg-4 col-xl-3" id="kapitel-1">
+		<div class="card bg-c2">
+			<h5 class="card-header">sinn <span class="fw-normal">(être)</span><span class="d-inline-block rounded-circle p-1 float-end mt-2" style="background-color: #ffcc00"></span></h5>
+			<div class="py-2 px-3">
+				
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">ech</div>
+					<div class="col fw-semibold">sinn</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">du</div>
+					<div class="col fw-semibold">bass</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">hien/hatt/si</div>
+					<div class="col fw-semibold">ass</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">mir</div>
+					<div class="col fw-semibold">sinn</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">dir/Dir</div>
+					<div class="col fw-semibold">sidd</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">si</div>
+					<div class="col fw-semibold">sinn</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+		<div class="card bg-c2">
+			<h5 class="card-header">heeschen <span class="fw-normal">(s'appeler)</span><span class="d-inline-block rounded-circle p-1 float-end mt-2" style="background-color: #ffcc00"></span></h5>
+			<div class="py-2 px-3">
+				
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">ech</div>
+					<div class="col fw-semibold">heeschen</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">du</div>
+					<div class="col fw-semibold">heeschs</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">hien/hatt/si</div>
+					<div class="col fw-semibold">heescht</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">mir</div>
+					<div class="col fw-semibold">heeschen</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">dir/Dir</div>
+					<div class="col fw-semibold">heescht</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">si</div>
+					<div class="col fw-semibold">heeschen</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+		<div class="card bg-c2">
+			<h5 class="card-header">kommen <span class="fw-normal">(venir)</span><span class="d-inline-block rounded-circle p-1 float-end mt-2" style="background-color: #ffcc00"></span></h5>
+			<div class="py-2 px-3">
+				
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">ech</div>
+					<div class="col fw-semibold">kommen</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">du</div>
+					<div class="col fw-semibold">kënns</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">hien/hatt/si</div>
+					<div class="col fw-semibold">kënnt</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">mir</div>
+					<div class="col fw-semibold">kommen</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">dir/Dir</div>
+					<div class="col fw-semibold">kommt</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">si</div>
+					<div class="col fw-semibold">kommen</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+		<div class="card bg-c2">
+			<h5 class="card-header">goen <span class="fw-normal">(aller)</span><span class="d-inline-block rounded-circle p-1 float-end mt-2" style="background-color: #ffcc00"></span></h5>
+			<div class="py-2 px-3">
+				
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">ech</div>
+					<div class="col fw-semibold">ginn</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">du</div>
+					<div class="col fw-semibold">gees</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">hien/hatt/si</div>
+					<div class="col fw-semibold">geet</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">mir</div>
+					<div class="col fw-semibold">ginn</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">dir/Dir</div>
+					<div class="col fw-semibold">gitt</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">si</div>
+					<div class="col fw-semibold">ginn</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+		<div class="card bg-c2">
+			<h5 class="card-header">schwätzen <span class="fw-normal">(parler)</span><span class="d-inline-block rounded-circle p-1 float-end mt-2" style="background-color: #ffcc00"></span></h5>
+			<div class="py-2 px-3">
+				
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">ech</div>
+					<div class="col fw-semibold">schwätzen</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">du</div>
+					<div class="col fw-semibold">schwätz</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">hien/hatt/si</div>
+					<div class="col fw-semibold">schwätzt</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">mir</div>
+					<div class="col fw-semibold">schwätzen</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">dir/Dir</div>
+					<div class="col fw-semibold">schwätzt</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">si</div>
+					<div class="col fw-semibold">schwätzen</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+		<div class="card bg-c2">
+			<h5 class="card-header">léieren <span class="fw-normal">(apprendre)</span><span class="d-inline-block rounded-circle p-1 float-end mt-2" style="background-color: #ffcc00"></span></h5>
+			<div class="py-2 px-3">
+				
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">ech</div>
+					<div class="col fw-semibold">léieren</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">du</div>
+					<div class="col fw-semibold">léiers</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">hien/hatt/si</div>
+					<div class="col fw-semibold">léiert</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">mir</div>
+					<div class="col fw-semibold">léieren</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">dir/Dir</div>
+					<div class="col fw-semibold">léiert</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">si</div>
+					<div class="col fw-semibold">léieren</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-12 col-sm-6 col-lg-4 col-xl-3" id="kapitel-2">
+		<div class="card bg-c2">
+			<h5 class="card-header">hunn <span class="fw-normal">(avoir)</span><span class="d-inline-block rounded-circle p-1 float-end mt-2" style="background-color: #ff9900"></span></h5>
+			<div class="py-2 px-3">
+				
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">ech</div>
+					<div class="col fw-semibold">hunn</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">du</div>
+					<div class="col fw-semibold">hues</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">hien/hatt/si</div>
+					<div class="col fw-semibold">huet</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">mir</div>
+					<div class="col fw-semibold">hunn</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">dir/Dir</div>
+					<div class="col fw-semibold">hutt</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">si</div>
+					<div class="col fw-semibold">hunn</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+		<div class="card bg-c2">
+			<h5 class="card-header">wunnen <span class="fw-normal">(habiter)</span><span class="d-inline-block rounded-circle p-1 float-end mt-2" style="background-color: #ff9900"></span></h5>
+			<div class="py-2 px-3">
+				
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">ech</div>
+					<div class="col fw-semibold">wunnen</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">du</div>
+					<div class="col fw-semibold">wunns</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">hien/hatt/si</div>
+					<div class="col fw-semibold">wunnt</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">mir</div>
+					<div class="col fw-semibold">wunnen</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">dir/Dir</div>
+					<div class="col fw-semibold">wunnt</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">si</div>
+					<div class="col fw-semibold">wunnen</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+		<div class="card bg-c2">
+			<h5 class="card-header">brauchen <span class="fw-normal">(avoir besoin de)</span><span class="d-inline-block rounded-circle p-1 float-end mt-2" style="background-color: #ff9900"></span></h5>
+			<div class="py-2 px-3">
+				
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">ech</div>
+					<div class="col fw-semibold">brauch</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">du</div>
+					<div class="col fw-semibold">brauchs</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">hien/hatt/si</div>
+					<div class="col fw-semibold">brauch</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">mir</div>
+					<div class="col fw-semibold">brauchen</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">dir/Dir</div>
+					<div class="col fw-semibold">braucht</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">si</div>
+					<div class="col fw-semibold">brauchen</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+		<div class="card bg-c2">
+			<h5 class="card-header">umellen <span class="fw-normal">(enregistrer, inscrire)</span><span class="d-inline-block rounded-circle p-1 float-end mt-2" style="background-color: #ff9900"></span></h5>
+			<div class="py-2 px-3">
+				
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">ech</div>
+					<div class="col fw-semibold">mellen un</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">du</div>
+					<div class="col fw-semibold">mells un</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">hien/hatt/si</div>
+					<div class="col fw-semibold">mellt un</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">mir</div>
+					<div class="col fw-semibold">mellen un</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">dir/Dir</div>
+					<div class="col fw-semibold">mellt un</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">si</div>
+					<div class="col fw-semibold">mellen un</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-12 col-sm-6 col-lg-4 col-xl-3" id="kapitel-3">
+		<div class="card bg-c2">
+			<h5 class="card-header">fueren <span class="fw-normal">(circuler, conduire)</span><span class="d-inline-block rounded-circle p-1 float-end mt-2" style="background-color: #cc0000"></span></h5>
+			<div class="py-2 px-3">
+				
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">ech</div>
+					<div class="col fw-semibold">fueren</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">du</div>
+					<div class="col fw-semibold">fiers</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">hien/hatt/si</div>
+					<div class="col fw-semibold">fiert</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">mir</div>
+					<div class="col fw-semibold">fueren</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">dir/Dir</div>
+					<div class="col fw-semibold">fuert</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">si</div>
+					<div class="col fw-semibold">fueren</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+		<div class="card bg-c2">
+			<h5 class="card-header">huelen <span class="fw-normal">(prendre)</span><span class="d-inline-block rounded-circle p-1 float-end mt-2" style="background-color: #cc0000"></span></h5>
+			<div class="py-2 px-3">
+				
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">ech</div>
+					<div class="col fw-semibold">huelen</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">du</div>
+					<div class="col fw-semibold">hëls</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">hien/hatt/si</div>
+					<div class="col fw-semibold">hëlt</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">mir</div>
+					<div class="col fw-semibold">huelen</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">dir/Dir</div>
+					<div class="col fw-semibold">huelt</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">si</div>
+					<div class="col fw-semibold">huelen</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+		<div class="card bg-c2">
+			<h5 class="card-header">maachen <span class="fw-normal">(faire)</span><span class="d-inline-block rounded-circle p-1 float-end mt-2" style="background-color: #cc0000"></span></h5>
+			<div class="py-2 px-3">
+				
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">ech</div>
+					<div class="col fw-semibold">maachen</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">du</div>
+					<div class="col fw-semibold">méchs</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">hien/hatt/si</div>
+					<div class="col fw-semibold">mécht</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">mir</div>
+					<div class="col fw-semibold">maachen</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">dir/Dir</div>
+					<div class="col fw-semibold">maacht</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">si</div>
+					<div class="col fw-semibold">maachen</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+		<div class="card bg-c2">
+			<h5 class="card-header">schaffen <span class="fw-normal">(travailler)</span><span class="d-inline-block rounded-circle p-1 float-end mt-2" style="background-color: #cc0000"></span></h5>
+			<div class="py-2 px-3">
+				
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">ech</div>
+					<div class="col fw-semibold">schaffen</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">du</div>
+					<div class="col fw-semibold">schaffs</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">hien/hatt/si</div>
+					<div class="col fw-semibold">schafft</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">mir</div>
+					<div class="col fw-semibold">schaffen</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">dir/Dir</div>
+					<div class="col fw-semibold">schafft</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">si</div>
+					<div class="col fw-semibold">schaffen</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+		<div class="card bg-c2">
+			<h5 class="card-header">ufänken <span class="fw-normal">(commencer)</span><span class="d-inline-block rounded-circle p-1 float-end mt-2" style="background-color: #cc0000"></span></h5>
+			<div class="py-2 px-3">
+				
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">ech</div>
+					<div class="col fw-semibold">fänken un</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">du</div>
+					<div class="col fw-semibold">fänks un</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">hien/hatt/si</div>
+					<div class="col fw-semibold">fänkt un</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">mir</div>
+					<div class="col fw-semibold">fänken un</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">dir/Dir</div>
+					<div class="col fw-semibold">fänkt un</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">si</div>
+					<div class="col fw-semibold">fänken un</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+		<div class="card bg-c2">
+			<h5 class="card-header">waarden <span class="fw-normal">(attendre)</span><span class="d-inline-block rounded-circle p-1 float-end mt-2" style="background-color: #cc0000"></span></h5>
+			<div class="py-2 px-3">
+				
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">ech</div>
+					<div class="col fw-semibold">waarden</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">du</div>
+					<div class="col fw-semibold">waarts</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">hien/hatt/si</div>
+					<div class="col fw-semibold">waart</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">mir</div>
+					<div class="col fw-semibold">waarden</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">dir/Dir</div>
+					<div class="col fw-semibold">waart</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">si</div>
+					<div class="col fw-semibold">waarden</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-12 col-sm-6 col-lg-4 col-xl-3" id="kapitel-4">
+		<div class="card bg-c2">
+			<h5 class="card-header">iessen <span class="fw-normal">(manger)</span><span class="d-inline-block rounded-circle p-1 float-end mt-2" style="background-color: #990066"></span></h5>
+			<div class="py-2 px-3">
+				
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">ech</div>
+					<div class="col fw-semibold">iessen</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">du</div>
+					<div class="col fw-semibold">ëss</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">hien/hatt/si</div>
+					<div class="col fw-semibold">ësst</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">mir</div>
+					<div class="col fw-semibold">iessen</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">dir/Dir</div>
+					<div class="col fw-semibold">iesst</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">si</div>
+					<div class="col fw-semibold">iessen</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+		<div class="card bg-c2">
+			<h5 class="card-header">drénken <span class="fw-normal">(boire)</span><span class="d-inline-block rounded-circle p-1 float-end mt-2" style="background-color: #990066"></span></h5>
+			<div class="py-2 px-3">
+				
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">ech</div>
+					<div class="col fw-semibold">drénken</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">du</div>
+					<div class="col fw-semibold">drénks</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">hien/hatt/si</div>
+					<div class="col fw-semibold">drénkt</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">mir</div>
+					<div class="col fw-semibold">drénken</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">dir/Dir</div>
+					<div class="col fw-semibold">drénkt</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">si</div>
+					<div class="col fw-semibold">drénken</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+		<div class="card bg-c2">
+			<h5 class="card-header">kachen <span class="fw-normal">(cuisiner)</span><span class="d-inline-block rounded-circle p-1 float-end mt-2" style="background-color: #990066"></span></h5>
+			<div class="py-2 px-3">
+				
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">ech</div>
+					<div class="col fw-semibold">kachen</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">du</div>
+					<div class="col fw-semibold">kachs</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">hien/hatt/si</div>
+					<div class="col fw-semibold">kacht</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">mir</div>
+					<div class="col fw-semibold">kachen</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">dir/Dir</div>
+					<div class="col fw-semibold">kacht</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">si</div>
+					<div class="col fw-semibold">kachen</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+		<div class="card bg-c2">
+			<h5 class="card-header">lafen <span class="fw-normal">(courir)</span><span class="d-inline-block rounded-circle p-1 float-end mt-2" style="background-color: #990066"></span></h5>
+			<div class="py-2 px-3">
+				
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">ech</div>
+					<div class="col fw-semibold">lafen</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">du</div>
+					<div class="col fw-semibold">leefs</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">hien/hatt/si</div>
+					<div class="col fw-semibold">leeft</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">mir</div>
+					<div class="col fw-semibold">lafen</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">dir/Dir</div>
+					<div class="col fw-semibold">laaft</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">si</div>
+					<div class="col fw-semibold">lafen</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+		<div class="card bg-c2">
+			<h5 class="card-header">liesen <span class="fw-normal">(lire)</span><span class="d-inline-block rounded-circle p-1 float-end mt-2" style="background-color: #990066"></span></h5>
+			<div class="py-2 px-3">
+				
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">ech</div>
+					<div class="col fw-semibold">liesen</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">du</div>
+					<div class="col fw-semibold">lies</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">hien/hatt/si</div>
+					<div class="col fw-semibold">liest</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">mir</div>
+					<div class="col fw-semibold">liesen</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">dir/Dir</div>
+					<div class="col fw-semibold">liest</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">si</div>
+					<div class="col fw-semibold">liesen</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+		<div class="card bg-c2">
+			<h5 class="card-header">schlofen <span class="fw-normal">(dormir)</span><span class="d-inline-block rounded-circle p-1 float-end mt-2" style="background-color: #990066"></span></h5>
+			<div class="py-2 px-3">
+				
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">ech</div>
+					<div class="col fw-semibold">schlofen</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">du</div>
+					<div class="col fw-semibold">schléifs</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">hien/hatt/si</div>
+					<div class="col fw-semibold">schléift</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">mir</div>
+					<div class="col fw-semibold">schlofen</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">dir/Dir</div>
+					<div class="col fw-semibold">schlooft</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">si</div>
+					<div class="col fw-semibold">schlofen</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+		<div class="card bg-c2">
+			<h5 class="card-header">spillen <span class="fw-normal">(jouer)</span><span class="d-inline-block rounded-circle p-1 float-end mt-2" style="background-color: #990066"></span></h5>
+			<div class="py-2 px-3">
+				
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">ech</div>
+					<div class="col fw-semibold">spillen</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">du</div>
+					<div class="col fw-semibold">spills</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">hien/hatt/si</div>
+					<div class="col fw-semibold">spillt</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">mir</div>
+					<div class="col fw-semibold">spillen</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">dir/Dir</div>
+					<div class="col fw-semibold">spillt</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">si</div>
+					<div class="col fw-semibold">spillen</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+		<div class="card bg-c2">
+			<h5 class="card-header">wëllen <span class="fw-normal">(vouloir)</span><span class="d-inline-block rounded-circle p-1 float-end mt-2" style="background-color: #990066"></span></h5>
+			<div class="py-2 px-3">
+				
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">ech</div>
+					<div class="col fw-semibold">wëll</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">du</div>
+					<div class="col fw-semibold">wëlls</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">hien/hatt/si</div>
+					<div class="col fw-semibold">wëllt / wëll</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">mir</div>
+					<div class="col fw-semibold">wëllen</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">dir/Dir</div>
+					<div class="col fw-semibold">wëllt</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">si</div>
+					<div class="col fw-semibold">wëllen</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-12 col-sm-6 col-lg-4 col-xl-3" id="kapitel-5">
+		<div class="card bg-c2">
+			<h5 class="card-header">akafen <span class="fw-normal">(acheter)</span><span class="d-inline-block rounded-circle p-1 float-end mt-2" style="background-color: #3300cc"></span></h5>
+			<div class="py-2 px-3">
+				
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">ech</div>
+					<div class="col fw-semibold">kafen an</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">du</div>
+					<div class="col fw-semibold">keefs an</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">hien/hatt/si</div>
+					<div class="col fw-semibold">keeft an</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">mir</div>
+					<div class="col fw-semibold">kafen an</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">dir/Dir</div>
+					<div class="col fw-semibold">kaaft an</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">si</div>
+					<div class="col fw-semibold">kafen an</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+		<div class="card bg-c2">
+			<h5 class="card-header">bestellen <span class="fw-normal">(commander)</span><span class="d-inline-block rounded-circle p-1 float-end mt-2" style="background-color: #3300cc"></span></h5>
+			<div class="py-2 px-3">
+				
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">ech</div>
+					<div class="col fw-semibold">bestellen</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">du</div>
+					<div class="col fw-semibold">bestells</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">hien/hatt/si</div>
+					<div class="col fw-semibold">bestellt</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">mir</div>
+					<div class="col fw-semibold">bestellen</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">dir/Dir</div>
+					<div class="col fw-semibold">bestellt</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">si</div>
+					<div class="col fw-semibold">bestellen</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+		<div class="card bg-c2">
+			<h5 class="card-header">fannen <span class="fw-normal">(trouver)</span><span class="d-inline-block rounded-circle p-1 float-end mt-2" style="background-color: #3300cc"></span></h5>
+			<div class="py-2 px-3">
+				
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">ech</div>
+					<div class="col fw-semibold">fannen</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">du</div>
+					<div class="col fw-semibold">fënns</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">hien/hatt/si</div>
+					<div class="col fw-semibold">fënnt</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">mir</div>
+					<div class="col fw-semibold">fannen</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">dir/Dir</div>
+					<div class="col fw-semibold">fannt</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">si</div>
+					<div class="col fw-semibold">fannen</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+		<div class="card bg-c2">
+			<h5 class="card-header">huelen <span class="fw-normal">(prendre)</span><span class="d-inline-block rounded-circle p-1 float-end mt-2" style="background-color: #3300cc"></span></h5>
+			<div class="py-2 px-3">
+				
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">ech</div>
+					<div class="col fw-semibold">huelen</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">du</div>
+					<div class="col fw-semibold">hëls</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">hien/hatt/si</div>
+					<div class="col fw-semibold">hëlt</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">mir</div>
+					<div class="col fw-semibold">huelen</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">dir/Dir</div>
+					<div class="col fw-semibold">huelt</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">si</div>
+					<div class="col fw-semibold">huelen</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+		<div class="card bg-c2">
+			<h5 class="card-header">kréien <span class="fw-normal">(recevoir)</span><span class="d-inline-block rounded-circle p-1 float-end mt-2" style="background-color: #3300cc"></span></h5>
+			<div class="py-2 px-3">
+				
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">ech</div>
+					<div class="col fw-semibold">kréien</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">du</div>
+					<div class="col fw-semibold">kriss</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">hien/hatt/si</div>
+					<div class="col fw-semibold">kritt</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">mir</div>
+					<div class="col fw-semibold">kréien</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">dir/Dir</div>
+					<div class="col fw-semibold">kritt</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">si</div>
+					<div class="col fw-semibold">kréien</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+		<div class="card bg-c2">
+			<h5 class="card-header">kaschten <span class="fw-normal">(coûter)</span><span class="d-inline-block rounded-circle p-1 float-end mt-2" style="background-color: #3300cc"></span></h5>
+			<div class="py-2 px-3">
+				
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">ech</div>
+					<div class="col fw-semibold">kaschten</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">du</div>
+					<div class="col fw-semibold">kaschts</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">hien/hatt/si</div>
+					<div class="col fw-semibold">kascht</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">mir</div>
+					<div class="col fw-semibold">kaschten</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">dir/Dir</div>
+					<div class="col fw-semibold">kascht</div>
+				</div>
+				<div class="row align-items-start">
+					<div class="col-4 col-sm-6 text-secondary">si</div>
+					<div class="col fw-semibold">kaschten</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<p><a id="btn-back-to-top" role="button" aria-label="back to top">
+	<i class="bi bi-arrow-up-circle-fill text-secondary"></i>
+</a></p>
+
+<script>
+	function jump(h){
+		var top = document.getElementById(h).offsetTop;
+		
+		window.scrollTo({
+			top: top+163,
+			left: 0,
+			behavior: 'smooth'
+		});
+
+	}
+	//Get the button
+	let mybutton = document.getElementById("btn-back-to-top");
+
+	// When the user scrolls down 163px from the top of the document, show the button
+	window.onscroll = function () {
+		scrollFunction();
+	};
+
+	function scrollFunction() {
+		if (
+			document.body.scrollTop > 163 ||
+			document.documentElement.scrollTop > 163
+		) {
+			mybutton.style.display = "block";
+		} else {
+			mybutton.style.display = "none";
+		}
+	}
+	// When the user clicks on the button, scroll to the top of the document
+	mybutton.addEventListener("click", backToTop);
+
+	function backToTop() {
+		document.body.scrollTo({
+			top: 0,
+			left: 0,
+			behavior: 'smooth'
+		});
+		document.documentElement.scrollTo({
+			top: 0,
+			left: 0,
+			behavior: 'smooth'
+		});;
+	}
+</script>
+
+
+</div>
+	<!-- end content -->
+	</main>
+	<!-- footer -->
+	<footer class="mt-4">
+	<div class="bg-c2 text-light container-flex py-4 pb-sm-4 pt-sm-5">
+		<div class="container">
+			<div class="row g-3">
+				<div class="col-12 col-md-6">
+					<h6 class="footer-title">Chapitres</h6>	
+					<div class="row">
+						
+						<div class="col-4">
+							<a href="/lcm/chapitre/kapitel-1" class="btn link-footer">
+								<i class="bi bi-bookmark"></i> Kapitel 1
+							</a>
+						</div>
+						
+						<div class="col-4">
+							<a href="/lcm/chapitre/kapitel-2" class="btn link-footer">
+								<i class="bi bi-bookmark"></i> Kapitel 2
+							</a>
+						</div>
+						
+						<div class="col-4">
+							<a href="/lcm/chapitre/kapitel-3" class="btn link-footer">
+								<i class="bi bi-bookmark"></i> Kapitel 3
+							</a>
+						</div>
+						
+						<div class="col-4">
+							<a href="/lcm/chapitre/kapitel-4" class="btn link-footer">
+								<i class="bi bi-bookmark"></i> Kapitel 4
+							</a>
+						</div>
+						
+						<div class="col-4">
+							<a href="/lcm/chapitre/kapitel-5" class="btn link-footer">
+								<i class="bi bi-bookmark"></i> Kapitel 5
+							</a>
+						</div>
+						
+					</div>
+				</div>
+				<div class="col-6 col-md-3">
+					<h6 class="footer-title">Raccourcis</h6>
+					<div class="row">
+						<div class="col-12">
+							<a href="/lcm/vocabulaire" class="btn link-footer">
+								<i class="bi bi-list-columns-reverse"></i> Vocabulaire
+							</a>
+						</div>
+						<div class="col-12">
+							<a href="/lcm/conjugaison" class="btn link-footer">
+								<i class="bi bi-card-list"></i> Conjugaison
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-6 col-md-3">
+					<h6 class="footer-title">Liens utiles</h6>
+					<div class="row rows-col-1">
+						<div class="col-12">
+							<a href="https://sdl.inll.lu/?page_id=720" target="_blank" class="btn link-footer">
+								<i class="bi bi-book"></i> sdl.inll.lu
+							</a>
+						</div>
+						<div class="col-12">
+							<a href="https://lod.lu/" target="_blank" class="btn link-footer">
+								<i class="bi bi-translate"></i> lod.lu
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer-bottom container-flex">
+		<p class="m-0">&copy; Luxembourgish Course Material</p>
+	</div>
+</footer>
+	<!-- end footer -->
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+	<script src="/lcm/assets/js/main.js"></script>
+</body>
+</html>
